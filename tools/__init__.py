@@ -1,68 +1,60 @@
 """
-Initialize the tools package and export all tools.
+Initialize the tools package and export main functions.
 """
 
-from tools.edgar_tools import (
-    get_company_cik,
-    get_company_filings,
-    get_company_facts,
-    get_filing_text,
-    extract_financial_data
-)
+# Импортируем и экспортируем функции из sec_downloader
+try:
+    from tools.sec_downloader import (
+        search_filings,
+        download_filing_as_pdf,
+        get_recent_filing,
+        download_recent_filing_as_pdf,
+        search_filings_by_period,
+        format_filing_summary,
+        get_filing_list_summary
+    )
+except ImportError:
+    pass
 
-from tools.market_analysis import (
-    get_market_summary,
-    get_sector_performance,
-    get_economic_indicators,
-    get_market_news
-)
+# Импортируем и экспортируем функции из pdf_analyzer
+try:
+    from tools.pdf_analyzer import (
+        extract_text_from_pdf,
+        extract_tables_from_pdf,
+        find_financial_tables,
+        extract_key_metrics,
+        analyze_financial_report,
+        generate_recommendations,
+        summarize_report,
+        extract_specific_section,
+        extract_related_keywords,
+        extract_numerical_data_enhanced,
+        analyze_section_content
+    )
+except ImportError:
+    pass
 
-from tools.company_tools import (
-    get_company_profile,
-    get_financial_metrics,
-    get_recent_filings_summary,
-    compare_companies
-)
-
-from tools.utils import (
-    cache_result,
-    get_cached_result,
-    clear_cache,
-    clean_expired_cache,
-    format_currency,
-    calculate_growth_rate,
-    extract_latest_value,
-    summarize_financial_data
-)
-
-# Export all tools
+# Определяем, какие функции будут доступны при импорте из пакета
 __all__ = [
-    # Edgar tools
-    'get_company_cik',
-    'get_company_filings',
-    'get_company_facts',
-    'get_filing_text',
-    'extract_financial_data',
+    # Функции из sec_downloader
+    'search_filings',
+    'download_filing_as_pdf',
+    'get_recent_filing',
+    'download_recent_filing_as_pdf',
+    'search_filings_by_period',
+    'format_filing_summary',
+    'get_filing_list_summary',
     
-    # Market analysis tools
-    'get_market_summary',
-    'get_sector_performance',
-    'get_economic_indicators',
-    'get_market_news',
-    
-    # Company tools
-    'get_company_profile',
-    'get_financial_metrics',
-    'get_recent_filings_summary',
-    'compare_companies',
-    
-    # Utility functions
-    'cache_result',
-    'get_cached_result',
-    'clear_cache',
-    'clean_expired_cache',
-    'format_currency',
-    'calculate_growth_rate',
-    'extract_latest_value',
-    'summarize_financial_data'
+    # Функции из pdf_analyzer
+    'extract_text_from_pdf',
+    'extract_tables_from_pdf',
+    'find_financial_tables',
+    'extract_key_metrics',
+    'analyze_financial_report',
+    'generate_recommendations',
+    'summarize_report',
+    'extract_specific_section',
+    'extract_related_keywords',
+    'extract_numerical_data_enhanced',
+    'analyze_section_content'
 ]
