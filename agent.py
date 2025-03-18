@@ -356,11 +356,24 @@ def extract_section_from_report(file_path: str, section_name: str) -> str:
                 "section": section_name
             })
         
+        # Ограничиваем размер данных, чтобы не превысить лимиты API
+        content_preview = ""
+        if "content" in section_data:
+            # Ограничиваем размер превью контента до 1000 символов
+            content = section_data["content"]
+            content_preview = content[:1000] + "..." if len(content) > 1000 else content
+        
+        # Ограничиваем количество числовых данных для передачи
+        numerical_data = []
+        if "numerical_data" in section_data:
+            # Берем только первые 20 элементов из числовых данных
+            numerical_data = section_data["numerical_data"][:20]
+        
         return json.dumps({
             "result": f"Successfully extracted {section_name} section",
             "section": section_name,
-            "content_preview": section_data.get("content", "")[:3000] + "..." if len(section_data.get("content", "")) > 3000 else section_data.get("content", ""),
-            "numerical_data": section_data.get("numerical_data", []),
+            "content_preview": content_preview,
+            "numerical_data": numerical_data,
             "analysis": section_data.get("analysis", "")
         })
         
@@ -469,75 +482,46 @@ def get_financial_summary(ticker: str, report_type: str) -> str:
         # Получаем базовый анализ
         analysis_result = pdf_analyzer.analyze_financial_report(file_path)
         
-        # Извлекаем отдельные разделы для более детального анализа
+        # Извлекаем только важные разделы для сокращения объема данных
+        # Уменьшаем количество разделов, которые мы анализируем одновременно
         balance_sheet = pdf_analyzer.extract_specific_section(file_path, "balance_sheet")
         income_statement = pdf_analyzer.extract_specific_section(file_path, "income_statement")
-        cash_flow = pdf_analyzer.extract_specific_section(file_path, "cash_flow")
         
-        # Дополнительно извлекаем детальные данные из конкретных разделов
-        assets_data = pdf_analyzer.extract_specific_section(file_path, "assets")
-        liabilities_data = pdf_analyzer.extract_specific_section(file_path, "liabilities")
-        equity_data = pdf_analyzer.extract_specific_section(file_path, "equity")
-        revenue_data = pdf_analyzer.extract_specific_section(file_path, "revenue")
-        income_data = pdf_analyzer.extract_specific_section(file_path, "income")
+        # Выбираем только один дополнительный раздел, в зависимости от запроса
+        # Например, если нужны активы, извлекаем только их
+        assets_data = {}
+        liabilities_data = {}
         
-        # Компилируем все показатели в единую структуру
-        all_numerical_data = []
+        # Ограничиваем числовые данные для каждого раздела
+        numerical_data_balance = []
+        numerical_data_income = []
         
-        # Объединяем числовые данные из всех разделов
-        sections_with_data = [
-            balance_sheet, income_statement, cash_flow,
-            assets_data, liabilities_data, equity_data,
-            revenue_data, income_data
-        ]
-        
-        for section in sections_with_data:
-            if isinstance(section, dict) and "numerical_data" in section:
-                all_numerical_data.extend(section.get("numerical_data", []))
-        
-        # Удаляем дубликаты по описанию
-        unique_data = {}
-        for item in all_numerical_data:
-            desc = item["description"].lower().strip()
-            if desc not in unique_data or (desc in unique_data and item.get("confidence", "low") > unique_data[desc].get("confidence", "low")):
-                unique_data[desc] = item
-        
-        # Структурируем финансовые показатели по категориям
-        categorized_metrics = {
-            "Общие показатели": {},
-            "Балансовые показатели": {},
-            "Доходы и расходы": {},
-            "Денежные потоки": {},
-            "Коэффициенты и соотношения": {},
-        }
-        
-        # Распределяем показатели по категориям
-        for desc, item in unique_data.items():
-            value = item["value"]
-            category = "Общие показатели"
+        if "numerical_data" in balance_sheet:
+            numerical_data_balance = balance_sheet["numerical_data"][:10]
             
-            # Определяем категорию на основе описания
-            if any(word in desc for word in ["asset", "cash", "receivable", "inventory", "property", "equipment", "goodwill"]):
-                category = "Балансовые показатели"
-            elif any(word in desc for word in ["liability", "debt", "payable", "loan", "borrowing", "obligation"]):
-                category = "Балансовые показатели"
-            elif any(word in desc for word in ["equity", "capital", "stock", "retained", "earnings", "dividend"]):
-                category = "Балансовые показатели"
-            elif any(word in desc for word in ["revenue", "sales", "cost", "expense", "income", "profit", "margin", "earnings", "eps"]):
-                category = "Доходы и расходы"
-            elif any(word in desc for word in ["cash flow", "operating activities", "investing activities", "financing activities"]):
-                category = "Денежные потоки"
-            elif any(word in desc for word in ["ratio", "percent", "return", "roe", "roa", "ebitda", "margin"]):
-                category = "Коэффициенты и соотношения"
-            
-            categorized_metrics[category][desc] = value
+        if "numerical_data" in income_statement:
+            numerical_data_income = income_statement["numerical_data"][:10]
         
-        # Создаем итоговый отчет
+        # Создаем итоговый отчет с ограниченным объемом данных
         company_name = analysis_result.get("company_name", ticker)
         report_period = analysis_result.get("period", "последний отчетный период")
         metrics = analysis_result.get("metrics", {})
         
-        # Объединяем все данные в итоговый результат
+        # Структурируем данные по категориям, но ограничиваем объем
+        important_metrics = {
+            "Балансовые показатели": {},
+            "Доходы и расходы": {}
+        }
+        
+        # Добавляем только самые важные метрики
+        if "revenue" in metrics:
+            important_metrics["Доходы и расходы"]["revenue"] = metrics["revenue"]
+        if "net_income" in metrics:
+            important_metrics["Доходы и расходы"]["net_income"] = metrics["net_income"]
+        if "eps" in metrics:
+            important_metrics["Доходы и расходы"]["eps"] = metrics["eps"]
+            
+        # Объединяем все данные в итоговый результат с ограниченным объемом
         summary = {
             "ticker": ticker,
             "company_name": company_name,
@@ -548,21 +532,10 @@ def get_financial_summary(ticker: str, report_type: str) -> str:
             "financial_position": {
                 "balance_sheet_summary": balance_sheet.get("analysis", ""),
                 "income_statement_summary": income_statement.get("analysis", ""),
-                "cash_flow_summary": cash_flow.get("analysis", ""),
-                "assets_data": assets_data.get("numerical_data", [])[:10],  # Ограничиваем количество элементов
-                "liabilities_data": liabilities_data.get("numerical_data", [])[:10],
-                "equity_data": equity_data.get("numerical_data", [])[:5],
-                "revenue_data": revenue_data.get("numerical_data", [])[:5],
-                "income_data": income_data.get("numerical_data", [])[:5]
+                "balance_sheet_data": numerical_data_balance,
+                "income_statement_data": numerical_data_income
             },
-            "categorized_metrics": categorized_metrics,
-            "section_analyses": {
-                "assets": assets_data.get("analysis", ""),
-                "liabilities": liabilities_data.get("analysis", ""),
-                "equity": equity_data.get("analysis", ""),
-                "revenue": revenue_data.get("analysis", ""),
-                "income": income_data.get("analysis", "")
-            }
+            "important_metrics": important_metrics
         }
         
         return json.dumps(summary)
