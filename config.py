@@ -14,6 +14,11 @@ DEFAULT_MODEL = "gpt-4o"
 DEFAULT_TEMPERATURE = 0.2
 MAX_TOKENS = 4000
 
-# Other configuration parameters
+# API request parameters
 REQUEST_TIMEOUT = 30  # Timeout for API requests in seconds
+MAX_RETRIES = 3  # Maximum number of retries for API requests
+RETRY_DELAY = 1  # Initial delay between retries in seconds
+RATE_LIMIT_DELAY = 5  # Delay when hitting rate limits in seconds
+
+# Other configuration parameters
 CACHE_EXPIRY = 3600   # Cache expiry time in seconds (1 hour)

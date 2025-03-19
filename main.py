@@ -11,8 +11,21 @@ import logging
 import traceback
 from typing import Dict, List, Any, Optional
 
+# Настройка логирования - перемещено в начало файла
+logging.basicConfig(level=logging.INFO, 
+                    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+logger = logging.getLogger("main")
+
+# Импортируем регистр инструментов
+from tools.registry import get_all_tools
+
+# ВАЖНО: Сначала импортируем модули с инструментами, чтобы они могли зарегистрироваться
+import tools.sec_downloader
+import tools.pdf_analyzer
+
 from agents import Runner, RunConfig
-from agent import investment_agent
+# Импортируем функцию для получения агента ПОСЛЕ регистрации инструментов
+from agent import get_agent, model_settings
 
 def print_welcome() -> None:
     """Print a welcome message."""
@@ -27,6 +40,7 @@ about publicly traded companies.
 Type 'exit', 'quit', or 'q' to end the session.
 Type 'clear' to start a new conversation.
 Type 'help' for more information.
+Type 'tools' to see available tools.
     """)
     print("-" * 80 + "\n")
 
@@ -47,21 +61,48 @@ Commands:
 - 'exit', 'quit', or 'q': End the session
 - 'clear': Start a new conversation
 - 'help': Display this help information
+- 'tools': Show available tools
     """)
     print("-" * 80 + "\n")
 
+def print_available_tools() -> None:
+    """Print a list of available tools."""
+    tools = get_all_tools()
+    print("\n" + "-" * 80)
+    print(f"{'AVAILABLE TOOLS':^80}")
+    print("-" * 80)
+    print(f"\nThe agent has access to {len(tools)} tools:\n")
+    
+    for i, tool in enumerate(tools, 1):
+        if hasattr(tool, 'name'):
+            tool_name = tool.name
+            description = getattr(tool, 'description', '')
+            print(f"{i}. {tool_name}")
+            if description:
+                # Ограничиваем длину описания для компактности
+                if len(description) > 80:
+                    description = description[:77] + "..."
+                print(f"   {description}")
+        else:
+            print(f"{i}. [Unnamed Tool]")
+    
+    print("\n" + "-" * 80 + "\n")
+
 def main() -> None:
     """Main application function."""
-    # Настройка логирования
-    logging.basicConfig(level=logging.INFO, 
-                        format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-    logger = logging.getLogger("main")
-    
     try:
+        # Выводим в лог количество найденных инструментов ПЕРЕД созданием агента
+        tools = get_all_tools()
+        logger.info(f"Found {len(tools)} registered tools")
+        
+        # Получаем агента (инициализируется при первом вызове)
+        investment_agent = get_agent()
+        
         # Создаем конфигурацию для выполнения
         run_config = RunConfig(
-            tracing_disabled=True,  # Отключаем трассировку
+            tracing_disabled=True,
             workflow_name="Investment Analysis",
+            model_settings=model_settings
         )
         
         # Хранение истории разговора
@@ -93,6 +134,11 @@ def main() -> None:
             # Проверяем команду помощи
             if user_input.lower() == 'help':
                 print_help()
+                continue
+            
+            # Проверяем команду вывода доступных инструментов
+            if user_input.lower() == 'tools':
+                print_available_tools()
                 continue
             
             # Пропускаем пустой ввод
@@ -135,13 +181,11 @@ def main() -> None:
             except Exception as e:
                 logger.exception("Error processing query")
                 print(f"\nError: {str(e)}\n")
-                traceback.print_exc()
                 print("Please try again with a different query.")
     
     except Exception as e:
         logger.exception("Fatal error in main loop")
         print(f"Fatal error: {str(e)}")
-        traceback.print_exc()
         sys.exit(1)
 
 if __name__ == "__main__":
