@@ -1,0 +1,1607 @@
+2025-03-23 18:38:45,939 - run_agent - INFO - Получен запрос: отчетность MSFT
+2025-03-23 18:38:45,939 - run_agent - INFO - Сканирование директории с инструментами: /Users/zilber/Desktop/repo/ai_agent_finance/tools
+2025-03-23 18:38:46,203 - run_agent - INFO - Импортирован модуль: tools.registry
+2025-03-23 18:38:46,207 - pdf_analyzer - WARNING - No PDF extraction library found. Install PyMuPDF, PDFMiner, or PyPDF2.
+2025-03-23 18:38:46,208 - tools_registry - INFO - Инструмент зарегистрирован: extract_text_from_pdf
+2025-03-23 18:38:46,208 - tools_registry - INFO - Инструмент зарегистрирован: find_financial_tables
+2025-03-23 18:38:46,208 - tools_registry - INFO - Инструмент зарегистрирован: extract_key_metrics
+2025-03-23 18:38:46,209 - tools_registry - INFO - Инструмент зарегистрирован: analyze_financial_report
+2025-03-23 18:38:46,209 - tools_registry - INFO - Инструмент зарегистрирован: extract_specific_section
+2025-03-23 18:38:46,209 - tools_registry - INFO - Инструмент зарегистрирован: extract_related_keywords
+2025-03-23 18:38:46,210 - tools_registry - INFO - Инструмент зарегистрирован: summarize_report
+2025-03-23 18:38:46,210 - tools_registry - INFO - Инструмент зарегистрирован: get_and_analyze_latest_report
+2025-03-23 18:38:46,210 - run_agent - INFO - Импортирован модуль: tools.pdf_analyzer
+2025-03-23 18:38:46,215 - trade_tracker - INFO - База данных сделок инициализирована
+2025-03-23 18:38:46,217 - tools_registry - INFO - Инструмент зарегистрирован: add_trade
+2025-03-23 18:38:46,218 - tools_registry - INFO - Инструмент зарегистрирован: close_trade
+2025-03-23 18:38:46,218 - tools_registry - INFO - Инструмент зарегистрирован: get_trade
+2025-03-23 18:38:46,219 - tools_registry - INFO - Инструмент зарегистрирован: list_trades
+2025-03-23 18:38:46,220 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_statistics
+2025-03-23 18:38:46,220 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_form_questions
+2025-03-23 18:38:46,220 - tools_registry - INFO - Инструмент зарегистрирован: get_close_trade_form_questions
+2025-03-23 18:38:46,220 - run_agent - INFO - Импортирован модуль: tools.trade_tracker
+2025-03-23 18:38:46,239 - tools_registry - INFO - Инструмент зарегистрирован: search_filings
+2025-03-23 18:38:46,240 - tools_registry - INFO - Инструмент зарегистрирован: download_filing_as_pdf
+2025-03-23 18:38:46,241 - tools_registry - INFO - Инструмент зарегистрирован: get_recent_filing
+2025-03-23 18:38:46,241 - tools_registry - INFO - Инструмент зарегистрирован: download_recent_filing_as_pdf
+2025-03-23 18:38:46,242 - tools_registry - INFO - Инструмент зарегистрирован: search_filings_by_period
+2025-03-23 18:38:46,242 - tools_registry - INFO - Инструмент зарегистрирован: format_filing_summary
+2025-03-23 18:38:46,243 - tools_registry - INFO - Инструмент зарегистрирован: get_filing_list_summary
+2025-03-23 18:38:46,243 - tools_registry - INFO - Инструмент зарегистрирован: get_company_quarterly_report
+2025-03-23 18:38:46,244 - tools_registry - INFO - Инструмент зарегистрирован: get_company_annual_report
+2025-03-23 18:38:46,245 - tools_registry - INFO - Инструмент зарегистрирован: get_company_recent_filings
+2025-03-23 18:38:46,245 - tools_registry - INFO - Инструмент зарегистрирован: download_specific_filing
+2025-03-23 18:38:46,245 - run_agent - INFO - Импортирован модуль: tools.sec_downloader
+2025-03-23 18:38:46,245 - run_agent - INFO - Импортировано модулей с инструментами: 4
+2025-03-23 18:38:46,246 - run_agent - INFO - Инициализация инвестиционного агента
+2025-03-23 18:38:46,246 - investment_agent - INFO - Initializing agent with 26 tools
+2025-03-23 18:38:46,246 - investment_agent - INFO - Investment Agent initialized successfully with 26 tools
+2025-03-23 18:38:46,246 - run_agent - INFO - Обработка запроса инвестиционным агентом
+2025-03-23 18:38:47,954 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-23 18:38:48,106 - sec_downloader - INFO - Поиск отчетов для MSFT
+2025-03-23 18:38:49,218 - sec_downloader - INFO - Найдено 5 отчетов для MSFT
+2025-03-23 18:38:51,652 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-23 18:38:51,659 - run_agent - INFO - Запрос успешно обработан
+2025-03-23 18:40:09,085 - run_agent - INFO - Получен запрос: отчетность MSFT 10-Q
+2025-03-23 18:40:09,086 - run_agent - INFO - Сканирование директории с инструментами: /Users/zilber/Desktop/repo/ai_agent_finance/tools
+2025-03-23 18:40:09,427 - run_agent - INFO - Импортирован модуль: tools.registry
+2025-03-23 18:40:09,428 - pdf_analyzer - WARNING - No PDF extraction library found. Install PyMuPDF, PDFMiner, or PyPDF2.
+2025-03-23 18:40:09,429 - tools_registry - INFO - Инструмент зарегистрирован: extract_text_from_pdf
+2025-03-23 18:40:09,429 - tools_registry - INFO - Инструмент зарегистрирован: find_financial_tables
+2025-03-23 18:40:09,430 - tools_registry - INFO - Инструмент зарегистрирован: extract_key_metrics
+2025-03-23 18:40:09,430 - tools_registry - INFO - Инструмент зарегистрирован: analyze_financial_report
+2025-03-23 18:40:09,431 - tools_registry - INFO - Инструмент зарегистрирован: extract_specific_section
+2025-03-23 18:40:09,431 - tools_registry - INFO - Инструмент зарегистрирован: extract_related_keywords
+2025-03-23 18:40:09,431 - tools_registry - INFO - Инструмент зарегистрирован: summarize_report
+2025-03-23 18:40:09,432 - tools_registry - INFO - Инструмент зарегистрирован: get_and_analyze_latest_report
+2025-03-23 18:40:09,432 - run_agent - INFO - Импортирован модуль: tools.pdf_analyzer
+2025-03-23 18:40:09,434 - trade_tracker - INFO - База данных сделок инициализирована
+2025-03-23 18:40:09,435 - tools_registry - INFO - Инструмент зарегистрирован: add_trade
+2025-03-23 18:40:09,436 - tools_registry - INFO - Инструмент зарегистрирован: close_trade
+2025-03-23 18:40:09,436 - tools_registry - INFO - Инструмент зарегистрирован: get_trade
+2025-03-23 18:40:09,437 - tools_registry - INFO - Инструмент зарегистрирован: list_trades
+2025-03-23 18:40:09,438 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_statistics
+2025-03-23 18:40:09,438 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_form_questions
+2025-03-23 18:40:09,439 - tools_registry - INFO - Инструмент зарегистрирован: get_close_trade_form_questions
+2025-03-23 18:40:09,439 - run_agent - INFO - Импортирован модуль: tools.trade_tracker
+2025-03-23 18:40:09,464 - tools_registry - INFO - Инструмент зарегистрирован: search_filings
+2025-03-23 18:40:09,464 - tools_registry - INFO - Инструмент зарегистрирован: download_filing_as_pdf
+2025-03-23 18:40:09,465 - tools_registry - INFO - Инструмент зарегистрирован: get_recent_filing
+2025-03-23 18:40:09,465 - tools_registry - INFO - Инструмент зарегистрирован: download_recent_filing_as_pdf
+2025-03-23 18:40:09,466 - tools_registry - INFO - Инструмент зарегистрирован: search_filings_by_period
+2025-03-23 18:40:09,466 - tools_registry - INFO - Инструмент зарегистрирован: format_filing_summary
+2025-03-23 18:40:09,467 - tools_registry - INFO - Инструмент зарегистрирован: get_filing_list_summary
+2025-03-23 18:40:09,467 - tools_registry - INFO - Инструмент зарегистрирован: get_company_quarterly_report
+2025-03-23 18:40:09,468 - tools_registry - INFO - Инструмент зарегистрирован: get_company_annual_report
+2025-03-23 18:40:09,469 - tools_registry - INFO - Инструмент зарегистрирован: get_company_recent_filings
+2025-03-23 18:40:09,469 - tools_registry - INFO - Инструмент зарегистрирован: download_specific_filing
+2025-03-23 18:40:09,469 - run_agent - INFO - Импортирован модуль: tools.sec_downloader
+2025-03-23 18:40:09,469 - run_agent - INFO - Импортировано модулей с инструментами: 4
+2025-03-23 18:40:09,470 - run_agent - INFO - Инициализация инвестиционного агента
+2025-03-23 18:40:09,470 - investment_agent - INFO - Initializing agent with 26 tools
+2025-03-23 18:40:09,470 - investment_agent - INFO - Investment Agent initialized successfully with 26 tools
+2025-03-23 18:40:09,470 - run_agent - INFO - Обработка запроса инвестиционным агентом
+2025-03-23 18:40:11,226 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-23 18:40:11,350 - sec_downloader - INFO - Поиск отчетов для MSFT
+2025-03-23 18:40:12,158 - sec_downloader - INFO - Найдено 1 отчетов для MSFT
+2025-03-23 18:40:12,159 - sec_downloader - INFO - Скачивание документа в PDF: MSFT_10-Q_2025-01-29.pdf
+2025-03-23 18:40:13,479 - sec_downloader - INFO - Документ успешно скачан: downloaded_filings/MSFT_10-Q_2025-01-29.pdf
+2025-03-23 18:40:15,161 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-23 18:40:15,267 - run_agent - INFO - Запрос успешно обработан
+2025-03-23 18:41:27,620 - run_agent - INFO - Получен запрос: Отчетность 10Q для MSFT
+2025-03-23 18:41:27,620 - run_agent - INFO - Сканирование директории с инструментами: /Users/zilber/Desktop/repo/ai_agent_finance/tools
+2025-03-23 18:41:27,962 - run_agent - INFO - Импортирован модуль: tools.registry
+2025-03-23 18:41:27,962 - pdf_analyzer - WARNING - No PDF extraction library found. Install PyMuPDF, PDFMiner, or PyPDF2.
+2025-03-23 18:41:27,964 - tools_registry - INFO - Инструмент зарегистрирован: extract_text_from_pdf
+2025-03-23 18:41:27,964 - tools_registry - INFO - Инструмент зарегистрирован: find_financial_tables
+2025-03-23 18:41:27,964 - tools_registry - INFO - Инструмент зарегистрирован: extract_key_metrics
+2025-03-23 18:41:27,965 - tools_registry - INFO - Инструмент зарегистрирован: analyze_financial_report
+2025-03-23 18:41:27,965 - tools_registry - INFO - Инструмент зарегистрирован: extract_specific_section
+2025-03-23 18:41:27,965 - tools_registry - INFO - Инструмент зарегистрирован: extract_related_keywords
+2025-03-23 18:41:27,966 - tools_registry - INFO - Инструмент зарегистрирован: summarize_report
+2025-03-23 18:41:27,966 - tools_registry - INFO - Инструмент зарегистрирован: get_and_analyze_latest_report
+2025-03-23 18:41:27,966 - run_agent - INFO - Импортирован модуль: tools.pdf_analyzer
+2025-03-23 18:41:27,968 - trade_tracker - INFO - База данных сделок инициализирована
+2025-03-23 18:41:27,969 - tools_registry - INFO - Инструмент зарегистрирован: add_trade
+2025-03-23 18:41:27,970 - tools_registry - INFO - Инструмент зарегистрирован: close_trade
+2025-03-23 18:41:27,971 - tools_registry - INFO - Инструмент зарегистрирован: get_trade
+2025-03-23 18:41:27,972 - tools_registry - INFO - Инструмент зарегистрирован: list_trades
+2025-03-23 18:41:27,972 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_statistics
+2025-03-23 18:41:27,973 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_form_questions
+2025-03-23 18:41:27,973 - tools_registry - INFO - Инструмент зарегистрирован: get_close_trade_form_questions
+2025-03-23 18:41:27,973 - run_agent - INFO - Импортирован модуль: tools.trade_tracker
+2025-03-23 18:41:27,998 - tools_registry - INFO - Инструмент зарегистрирован: search_filings
+2025-03-23 18:41:27,999 - tools_registry - INFO - Инструмент зарегистрирован: download_filing_as_pdf
+2025-03-23 18:41:27,999 - tools_registry - INFO - Инструмент зарегистрирован: get_recent_filing
+2025-03-23 18:41:28,000 - tools_registry - INFO - Инструмент зарегистрирован: download_recent_filing_as_pdf
+2025-03-23 18:41:28,001 - tools_registry - INFO - Инструмент зарегистрирован: search_filings_by_period
+2025-03-23 18:41:28,001 - tools_registry - INFO - Инструмент зарегистрирован: format_filing_summary
+2025-03-23 18:41:28,001 - tools_registry - INFO - Инструмент зарегистрирован: get_filing_list_summary
+2025-03-23 18:41:28,002 - tools_registry - INFO - Инструмент зарегистрирован: get_company_quarterly_report
+2025-03-23 18:41:28,003 - tools_registry - INFO - Инструмент зарегистрирован: get_company_annual_report
+2025-03-23 18:41:28,003 - tools_registry - INFO - Инструмент зарегистрирован: get_company_recent_filings
+2025-03-23 18:41:28,004 - tools_registry - INFO - Инструмент зарегистрирован: download_specific_filing
+2025-03-23 18:41:28,004 - run_agent - INFO - Импортирован модуль: tools.sec_downloader
+2025-03-23 18:41:28,004 - run_agent - INFO - Импортировано модулей с инструментами: 4
+2025-03-23 18:41:28,004 - run_agent - INFO - Инициализация инвестиционного агента
+2025-03-23 18:41:28,004 - investment_agent - INFO - Initializing agent with 26 tools
+2025-03-23 18:41:28,004 - investment_agent - INFO - Investment Agent initialized successfully with 26 tools
+2025-03-23 18:41:28,004 - run_agent - INFO - Обработка запроса инвестиционным агентом
+2025-03-23 18:41:30,327 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-23 18:41:30,458 - sec_downloader - INFO - Поиск отчетов для MSFT
+2025-03-23 18:41:31,236 - sec_downloader - INFO - Найдено 1 отчетов для MSFT
+2025-03-23 18:41:31,237 - sec_downloader - INFO - Скачивание документа в PDF: MSFT_10-Q_2025-01-29.pdf
+2025-03-23 18:41:32,620 - sec_downloader - INFO - Документ успешно скачан: downloaded_filings/MSFT_10-Q_2025-01-29.pdf
+2025-03-23 18:41:33,963 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-23 18:41:34,068 - pdf_analyzer - INFO - Начинаем извлечение текста из downloaded_filings/MSFT_10-Q_2025-01-29.pdf
+2025-03-23 18:41:36,377 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-23 18:41:36,477 - run_agent - INFO - Запрос успешно обработан
+2025-03-23 18:47:32,268 - run_agent - INFO - Получен запрос: отчетность MSFT
+2025-03-23 18:47:32,269 - run_agent - INFO - Сканирование директории с инструментами: /Users/zilber/Desktop/repo/ai_agent_finance/tools
+2025-03-23 18:47:32,532 - run_agent - INFO - Импортирован модуль: tools.registry
+2025-03-23 18:47:32,533 - pdf_analyzer - WARNING - No PDF extraction library found. Install PyMuPDF, PDFMiner, or PyPDF2.
+2025-03-23 18:47:32,534 - tools_registry - INFO - Инструмент зарегистрирован: extract_text_from_pdf
+2025-03-23 18:47:32,534 - tools_registry - INFO - Инструмент зарегистрирован: find_financial_tables
+2025-03-23 18:47:32,535 - tools_registry - INFO - Инструмент зарегистрирован: extract_key_metrics
+2025-03-23 18:47:32,535 - tools_registry - INFO - Инструмент зарегистрирован: analyze_financial_report
+2025-03-23 18:47:32,535 - tools_registry - INFO - Инструмент зарегистрирован: extract_specific_section
+2025-03-23 18:47:32,536 - tools_registry - INFO - Инструмент зарегистрирован: extract_related_keywords
+2025-03-23 18:47:32,536 - tools_registry - INFO - Инструмент зарегистрирован: summarize_report
+2025-03-23 18:47:32,537 - tools_registry - INFO - Инструмент зарегистрирован: get_and_analyze_latest_report
+2025-03-23 18:47:32,537 - run_agent - INFO - Импортирован модуль: tools.pdf_analyzer
+2025-03-23 18:47:32,539 - trade_tracker - INFO - База данных сделок инициализирована
+2025-03-23 18:47:32,540 - tools_registry - INFO - Инструмент зарегистрирован: add_trade
+2025-03-23 18:47:32,541 - tools_registry - INFO - Инструмент зарегистрирован: close_trade
+2025-03-23 18:47:32,542 - tools_registry - INFO - Инструмент зарегистрирован: get_trade
+2025-03-23 18:47:32,543 - tools_registry - INFO - Инструмент зарегистрирован: list_trades
+2025-03-23 18:47:32,543 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_statistics
+2025-03-23 18:47:32,543 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_form_questions
+2025-03-23 18:47:32,544 - tools_registry - INFO - Инструмент зарегистрирован: get_close_trade_form_questions
+2025-03-23 18:47:32,544 - run_agent - INFO - Импортирован модуль: tools.trade_tracker
+2025-03-23 18:47:32,562 - tools_registry - INFO - Инструмент зарегистрирован: search_filings
+2025-03-23 18:47:32,562 - tools_registry - INFO - Инструмент зарегистрирован: download_filing_as_pdf
+2025-03-23 18:47:32,563 - tools_registry - INFO - Инструмент зарегистрирован: get_recent_filing
+2025-03-23 18:47:32,563 - tools_registry - INFO - Инструмент зарегистрирован: download_recent_filing_as_pdf
+2025-03-23 18:47:32,564 - tools_registry - INFO - Инструмент зарегистрирован: search_filings_by_period
+2025-03-23 18:47:32,564 - tools_registry - INFO - Инструмент зарегистрирован: format_filing_summary
+2025-03-23 18:47:32,565 - tools_registry - INFO - Инструмент зарегистрирован: get_filing_list_summary
+2025-03-23 18:47:32,565 - tools_registry - INFO - Инструмент зарегистрирован: get_company_quarterly_report
+2025-03-23 18:47:32,566 - tools_registry - INFO - Инструмент зарегистрирован: get_company_annual_report
+2025-03-23 18:47:32,567 - tools_registry - INFO - Инструмент зарегистрирован: get_company_recent_filings
+2025-03-23 18:47:32,567 - tools_registry - INFO - Инструмент зарегистрирован: download_specific_filing
+2025-03-23 18:47:32,567 - run_agent - INFO - Импортирован модуль: tools.sec_downloader
+2025-03-23 18:47:32,567 - run_agent - INFO - Импортировано модулей с инструментами: 4
+2025-03-23 18:47:32,568 - run_agent - INFO - Инициализация инвестиционного агента
+2025-03-23 18:47:32,568 - investment_agent - INFO - Initializing agent with 26 tools
+2025-03-23 18:47:32,568 - investment_agent - INFO - Investment Agent initialized successfully with 26 tools
+2025-03-23 18:47:32,568 - run_agent - INFO - Обработка запроса инвестиционным агентом
+2025-03-23 18:47:35,164 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-23 18:47:35,289 - run_agent - INFO - Получен ответ от агента (первые 200 символов): Какой тип отчетности вас интересует для Microsoft (MSFT)? Вы можете выбрать из следующих вариантов:
+
+1. Годовой отчет (10-K)
+2. Квартальный отчет (10-Q)
+3. Другие типы отчетов (например, 8-K)
+
+Пожалуй
+2025-03-23 18:47:35,290 - run_agent - INFO - Запрос успешно обработан
+2025-03-23 18:48:14,056 - run_agent - INFO - Получен запрос: Получить последний квартальный отчет (10-Q) для Microsoft (MSFT)
+2025-03-23 18:48:14,056 - run_agent - INFO - Сканирование директории с инструментами: /Users/zilber/Desktop/repo/ai_agent_finance/tools
+2025-03-23 18:48:14,314 - run_agent - INFO - Импортирован модуль: tools.registry
+2025-03-23 18:48:14,314 - pdf_analyzer - WARNING - No PDF extraction library found. Install PyMuPDF, PDFMiner, or PyPDF2.
+2025-03-23 18:48:14,315 - tools_registry - INFO - Инструмент зарегистрирован: extract_text_from_pdf
+2025-03-23 18:48:14,315 - tools_registry - INFO - Инструмент зарегистрирован: find_financial_tables
+2025-03-23 18:48:14,316 - tools_registry - INFO - Инструмент зарегистрирован: extract_key_metrics
+2025-03-23 18:48:14,316 - tools_registry - INFO - Инструмент зарегистрирован: analyze_financial_report
+2025-03-23 18:48:14,317 - tools_registry - INFO - Инструмент зарегистрирован: extract_specific_section
+2025-03-23 18:48:14,317 - tools_registry - INFO - Инструмент зарегистрирован: extract_related_keywords
+2025-03-23 18:48:14,317 - tools_registry - INFO - Инструмент зарегистрирован: summarize_report
+2025-03-23 18:48:14,318 - tools_registry - INFO - Инструмент зарегистрирован: get_and_analyze_latest_report
+2025-03-23 18:48:14,318 - run_agent - INFO - Импортирован модуль: tools.pdf_analyzer
+2025-03-23 18:48:14,319 - trade_tracker - INFO - База данных сделок инициализирована
+2025-03-23 18:48:14,321 - tools_registry - INFO - Инструмент зарегистрирован: add_trade
+2025-03-23 18:48:14,322 - tools_registry - INFO - Инструмент зарегистрирован: close_trade
+2025-03-23 18:48:14,322 - tools_registry - INFO - Инструмент зарегистрирован: get_trade
+2025-03-23 18:48:14,323 - tools_registry - INFO - Инструмент зарегистрирован: list_trades
+2025-03-23 18:48:14,324 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_statistics
+2025-03-23 18:48:14,324 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_form_questions
+2025-03-23 18:48:14,324 - tools_registry - INFO - Инструмент зарегистрирован: get_close_trade_form_questions
+2025-03-23 18:48:14,324 - run_agent - INFO - Импортирован модуль: tools.trade_tracker
+2025-03-23 18:48:14,342 - tools_registry - INFO - Инструмент зарегистрирован: search_filings
+2025-03-23 18:48:14,342 - tools_registry - INFO - Инструмент зарегистрирован: download_filing_as_pdf
+2025-03-23 18:48:14,343 - tools_registry - INFO - Инструмент зарегистрирован: get_recent_filing
+2025-03-23 18:48:14,343 - tools_registry - INFO - Инструмент зарегистрирован: download_recent_filing_as_pdf
+2025-03-23 18:48:14,344 - tools_registry - INFO - Инструмент зарегистрирован: search_filings_by_period
+2025-03-23 18:48:14,345 - tools_registry - INFO - Инструмент зарегистрирован: format_filing_summary
+2025-03-23 18:48:14,345 - tools_registry - INFO - Инструмент зарегистрирован: get_filing_list_summary
+2025-03-23 18:48:14,346 - tools_registry - INFO - Инструмент зарегистрирован: get_company_quarterly_report
+2025-03-23 18:48:14,346 - tools_registry - INFO - Инструмент зарегистрирован: get_company_annual_report
+2025-03-23 18:48:14,347 - tools_registry - INFO - Инструмент зарегистрирован: get_company_recent_filings
+2025-03-23 18:48:14,347 - tools_registry - INFO - Инструмент зарегистрирован: download_specific_filing
+2025-03-23 18:48:14,347 - run_agent - INFO - Импортирован модуль: tools.sec_downloader
+2025-03-23 18:48:14,348 - run_agent - INFO - Импортировано модулей с инструментами: 4
+2025-03-23 18:48:14,348 - run_agent - INFO - Инициализация инвестиционного агента
+2025-03-23 18:48:14,348 - investment_agent - INFO - Initializing agent with 26 tools
+2025-03-23 18:48:14,348 - investment_agent - INFO - Investment Agent initialized successfully with 26 tools
+2025-03-23 18:48:14,348 - run_agent - INFO - Обработка запроса инвестиционным агентом
+2025-03-23 18:48:16,447 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-23 18:48:16,569 - sec_downloader - INFO - Поиск отчетов для MSFT
+2025-03-23 18:48:17,352 - sec_downloader - INFO - Найдено 1 отчетов для MSFT
+2025-03-23 18:48:17,353 - sec_downloader - INFO - Скачивание документа в PDF: MSFT_10-Q_2025-01-29.pdf
+2025-03-23 18:48:18,655 - sec_downloader - INFO - Документ успешно скачан: downloaded_filings/MSFT_10-Q_2025-01-29.pdf
+2025-03-23 18:48:20,129 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-23 18:48:22,659 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-23 18:48:22,760 - pdf_analyzer - INFO - Начинаем извлечение текста из downloaded_filings/MSFT_10-Q_2025-01-29.pdf
+2025-03-23 18:48:24,460 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-23 18:48:24,559 - run_agent - INFO - Получен ответ от агента (первые 200 символов): К сожалению, не удалось извлечь текст из PDF-файла. Я могу попробовать загрузить и проанализировать отчет заново. Хотите, чтобы я это сделал?
+2025-03-23 18:48:24,559 - run_agent - INFO - Запрос успешно обработан
+2025-03-23 18:56:11,320 - run_agent - INFO - Получен запрос: отчетность MSFT
+2025-03-23 18:56:11,320 - run_agent - INFO - Сканирование директории с инструментами: /Users/zilber/Desktop/repo/ai_agent_finance/tools
+2025-03-23 18:56:11,709 - run_agent - INFO - Импортирован модуль: tools.registry
+2025-03-23 18:56:11,710 - pdf_analyzer - WARNING - No PDF extraction library found. Install PyMuPDF, PDFMiner, or PyPDF2.
+2025-03-23 18:56:11,711 - tools_registry - INFO - Инструмент зарегистрирован: extract_text_from_pdf
+2025-03-23 18:56:11,712 - tools_registry - INFO - Инструмент зарегистрирован: find_financial_tables
+2025-03-23 18:56:11,712 - tools_registry - INFO - Инструмент зарегистрирован: extract_key_metrics
+2025-03-23 18:56:11,713 - tools_registry - INFO - Инструмент зарегистрирован: analyze_financial_report
+2025-03-23 18:56:11,713 - tools_registry - INFO - Инструмент зарегистрирован: extract_specific_section
+2025-03-23 18:56:11,713 - tools_registry - INFO - Инструмент зарегистрирован: extract_related_keywords
+2025-03-23 18:56:11,714 - tools_registry - INFO - Инструмент зарегистрирован: summarize_report
+2025-03-23 18:56:11,714 - tools_registry - INFO - Инструмент зарегистрирован: get_and_analyze_latest_report
+2025-03-23 18:56:11,714 - run_agent - INFO - Импортирован модуль: tools.pdf_analyzer
+2025-03-23 18:56:11,717 - trade_tracker - INFO - База данных сделок инициализирована
+2025-03-23 18:56:11,718 - tools_registry - INFO - Инструмент зарегистрирован: add_trade
+2025-03-23 18:56:11,719 - tools_registry - INFO - Инструмент зарегистрирован: close_trade
+2025-03-23 18:56:11,720 - tools_registry - INFO - Инструмент зарегистрирован: get_trade
+2025-03-23 18:56:11,721 - tools_registry - INFO - Инструмент зарегистрирован: list_trades
+2025-03-23 18:56:11,722 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_statistics
+2025-03-23 18:56:11,722 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_form_questions
+2025-03-23 18:56:11,722 - tools_registry - INFO - Инструмент зарегистрирован: get_close_trade_form_questions
+2025-03-23 18:56:11,723 - run_agent - INFO - Импортирован модуль: tools.trade_tracker
+2025-03-23 18:56:11,753 - tools_registry - INFO - Инструмент зарегистрирован: search_filings
+2025-03-23 18:56:11,754 - tools_registry - INFO - Инструмент зарегистрирован: download_filing_as_pdf
+2025-03-23 18:56:11,755 - tools_registry - INFO - Инструмент зарегистрирован: get_recent_filing
+2025-03-23 18:56:11,755 - tools_registry - INFO - Инструмент зарегистрирован: download_recent_filing_as_pdf
+2025-03-23 18:56:11,756 - tools_registry - INFO - Инструмент зарегистрирован: search_filings_by_period
+2025-03-23 18:56:11,757 - tools_registry - INFO - Инструмент зарегистрирован: format_filing_summary
+2025-03-23 18:56:11,757 - tools_registry - INFO - Инструмент зарегистрирован: get_filing_list_summary
+2025-03-23 18:56:11,758 - tools_registry - INFO - Инструмент зарегистрирован: get_company_quarterly_report
+2025-03-23 18:56:11,758 - tools_registry - INFO - Инструмент зарегистрирован: get_company_annual_report
+2025-03-23 18:56:11,759 - tools_registry - INFO - Инструмент зарегистрирован: get_company_recent_filings
+2025-03-23 18:56:11,759 - tools_registry - INFO - Инструмент зарегистрирован: download_specific_filing
+2025-03-23 18:56:11,760 - run_agent - INFO - Импортирован модуль: tools.sec_downloader
+2025-03-23 18:56:11,760 - run_agent - INFO - Импортировано модулей с инструментами: 4
+2025-03-23 18:56:11,760 - run_agent - INFO - Инициализация инвестиционного агента
+2025-03-23 18:56:11,760 - investment_agent - INFO - Initializing agent with 26 tools
+2025-03-23 18:56:11,760 - investment_agent - INFO - Investment Agent initialized successfully with 26 tools
+2025-03-23 18:56:11,760 - run_agent - INFO - Обработка запроса инвестиционным агентом
+2025-03-23 18:56:13,845 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-23 18:56:13,967 - run_agent - INFO - Получен ответ от агента (первые 200 символов): Какой тип отчетности вас интересует для Microsoft (MSFT)? Вы можете выбрать из следующих вариантов:
+
+1. Годовой отчет (10-K)
+2. Квартальный отчет (10-Q)
+3. Другие типы отчетов (например, 8-K)
+
+Пожалуй
+2025-03-23 18:56:13,967 - run_agent - INFO - Запрос успешно обработан
+2025-03-23 18:56:35,436 - run_agent - INFO - Получен запрос: Получить последний квартальный отчет (10-Q) для Microsoft (MSFT)
+2025-03-23 18:56:35,436 - run_agent - INFO - Сканирование директории с инструментами: /Users/zilber/Desktop/repo/ai_agent_finance/tools
+2025-03-23 18:56:35,714 - run_agent - INFO - Импортирован модуль: tools.registry
+2025-03-23 18:56:35,714 - pdf_analyzer - WARNING - No PDF extraction library found. Install PyMuPDF, PDFMiner, or PyPDF2.
+2025-03-23 18:56:35,715 - tools_registry - INFO - Инструмент зарегистрирован: extract_text_from_pdf
+2025-03-23 18:56:35,715 - tools_registry - INFO - Инструмент зарегистрирован: find_financial_tables
+2025-03-23 18:56:35,716 - tools_registry - INFO - Инструмент зарегистрирован: extract_key_metrics
+2025-03-23 18:56:35,716 - tools_registry - INFO - Инструмент зарегистрирован: analyze_financial_report
+2025-03-23 18:56:35,717 - tools_registry - INFO - Инструмент зарегистрирован: extract_specific_section
+2025-03-23 18:56:35,717 - tools_registry - INFO - Инструмент зарегистрирован: extract_related_keywords
+2025-03-23 18:56:35,717 - tools_registry - INFO - Инструмент зарегистрирован: summarize_report
+2025-03-23 18:56:35,718 - tools_registry - INFO - Инструмент зарегистрирован: get_and_analyze_latest_report
+2025-03-23 18:56:35,718 - run_agent - INFO - Импортирован модуль: tools.pdf_analyzer
+2025-03-23 18:56:35,719 - trade_tracker - INFO - База данных сделок инициализирована
+2025-03-23 18:56:35,721 - tools_registry - INFO - Инструмент зарегистрирован: add_trade
+2025-03-23 18:56:35,722 - tools_registry - INFO - Инструмент зарегистрирован: close_trade
+2025-03-23 18:56:35,722 - tools_registry - INFO - Инструмент зарегистрирован: get_trade
+2025-03-23 18:56:35,723 - tools_registry - INFO - Инструмент зарегистрирован: list_trades
+2025-03-23 18:56:35,724 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_statistics
+2025-03-23 18:56:35,724 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_form_questions
+2025-03-23 18:56:35,724 - tools_registry - INFO - Инструмент зарегистрирован: get_close_trade_form_questions
+2025-03-23 18:56:35,724 - run_agent - INFO - Импортирован модуль: tools.trade_tracker
+2025-03-23 18:56:35,741 - tools_registry - INFO - Инструмент зарегистрирован: search_filings
+2025-03-23 18:56:35,742 - tools_registry - INFO - Инструмент зарегистрирован: download_filing_as_pdf
+2025-03-23 18:56:35,743 - tools_registry - INFO - Инструмент зарегистрирован: get_recent_filing
+2025-03-23 18:56:35,743 - tools_registry - INFO - Инструмент зарегистрирован: download_recent_filing_as_pdf
+2025-03-23 18:56:35,744 - tools_registry - INFO - Инструмент зарегистрирован: search_filings_by_period
+2025-03-23 18:56:35,744 - tools_registry - INFO - Инструмент зарегистрирован: format_filing_summary
+2025-03-23 18:56:35,745 - tools_registry - INFO - Инструмент зарегистрирован: get_filing_list_summary
+2025-03-23 18:56:35,745 - tools_registry - INFO - Инструмент зарегистрирован: get_company_quarterly_report
+2025-03-23 18:56:35,746 - tools_registry - INFO - Инструмент зарегистрирован: get_company_annual_report
+2025-03-23 18:56:35,746 - tools_registry - INFO - Инструмент зарегистрирован: get_company_recent_filings
+2025-03-23 18:56:35,747 - tools_registry - INFO - Инструмент зарегистрирован: download_specific_filing
+2025-03-23 18:56:35,747 - run_agent - INFO - Импортирован модуль: tools.sec_downloader
+2025-03-23 18:56:35,747 - run_agent - INFO - Импортировано модулей с инструментами: 4
+2025-03-23 18:56:35,747 - run_agent - INFO - Инициализация инвестиционного агента
+2025-03-23 18:56:35,747 - investment_agent - INFO - Initializing agent with 26 tools
+2025-03-23 18:56:35,747 - investment_agent - INFO - Investment Agent initialized successfully with 26 tools
+2025-03-23 18:56:35,747 - run_agent - INFO - Обработка запроса инвестиционным агентом
+2025-03-23 18:56:37,572 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-23 18:56:37,696 - sec_downloader - INFO - Поиск отчетов для MSFT
+2025-03-23 18:56:38,865 - sec_downloader - INFO - Найдено 1 отчетов для MSFT
+2025-03-23 18:56:38,866 - sec_downloader - INFO - Скачивание документа в PDF: MSFT_10-Q_2025-01-29.pdf
+2025-03-23 19:09:45,552 - run_agent - INFO - Получен запрос: отчетность MSFT
+2025-03-23 19:09:45,552 - run_agent - INFO - Сканирование директории с инструментами: /Users/zilber/Desktop/repo/ai_agent_finance/tools
+2025-03-23 19:09:45,812 - run_agent - INFO - Импортирован модуль: tools.registry
+2025-03-23 19:09:45,812 - pdf_analyzer - WARNING - No PDF extraction library found. Install PyMuPDF, PDFMiner, or PyPDF2.
+2025-03-23 19:09:45,813 - tools_registry - INFO - Инструмент зарегистрирован: extract_text_from_pdf
+2025-03-23 19:09:45,814 - tools_registry - INFO - Инструмент зарегистрирован: find_financial_tables
+2025-03-23 19:09:45,814 - tools_registry - INFO - Инструмент зарегистрирован: extract_key_metrics
+2025-03-23 19:09:45,815 - tools_registry - INFO - Инструмент зарегистрирован: analyze_financial_report
+2025-03-23 19:09:45,815 - tools_registry - INFO - Инструмент зарегистрирован: extract_specific_section
+2025-03-23 19:09:45,815 - tools_registry - INFO - Инструмент зарегистрирован: extract_related_keywords
+2025-03-23 19:09:45,816 - tools_registry - INFO - Инструмент зарегистрирован: summarize_report
+2025-03-23 19:09:45,816 - tools_registry - INFO - Инструмент зарегистрирован: get_and_analyze_latest_report
+2025-03-23 19:09:45,816 - run_agent - INFO - Импортирован модуль: tools.pdf_analyzer
+2025-03-23 19:09:45,818 - trade_tracker - INFO - База данных сделок инициализирована
+2025-03-23 19:09:45,820 - tools_registry - INFO - Инструмент зарегистрирован: add_trade
+2025-03-23 19:09:45,821 - tools_registry - INFO - Инструмент зарегистрирован: close_trade
+2025-03-23 19:09:45,821 - tools_registry - INFO - Инструмент зарегистрирован: get_trade
+2025-03-23 19:09:45,822 - tools_registry - INFO - Инструмент зарегистрирован: list_trades
+2025-03-23 19:09:45,823 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_statistics
+2025-03-23 19:09:45,823 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_form_questions
+2025-03-23 19:09:45,823 - tools_registry - INFO - Инструмент зарегистрирован: get_close_trade_form_questions
+2025-03-23 19:09:45,823 - run_agent - INFO - Импортирован модуль: tools.trade_tracker
+2025-03-23 19:09:45,841 - tools_registry - INFO - Инструмент зарегистрирован: search_filings
+2025-03-23 19:09:45,842 - tools_registry - INFO - Инструмент зарегистрирован: download_filing_as_pdf
+2025-03-23 19:09:45,843 - tools_registry - INFO - Инструмент зарегистрирован: get_recent_filing
+2025-03-23 19:09:45,843 - tools_registry - INFO - Инструмент зарегистрирован: download_recent_filing_as_pdf
+2025-03-23 19:09:45,844 - tools_registry - INFO - Инструмент зарегистрирован: search_filings_by_period
+2025-03-23 19:09:45,844 - tools_registry - INFO - Инструмент зарегистрирован: format_filing_summary
+2025-03-23 19:09:45,845 - tools_registry - INFO - Инструмент зарегистрирован: get_filing_list_summary
+2025-03-23 19:09:45,845 - tools_registry - INFO - Инструмент зарегистрирован: get_company_quarterly_report
+2025-03-23 19:09:45,846 - tools_registry - INFO - Инструмент зарегистрирован: get_company_annual_report
+2025-03-23 19:09:45,846 - tools_registry - INFO - Инструмент зарегистрирован: get_company_recent_filings
+2025-03-23 19:09:45,847 - tools_registry - INFO - Инструмент зарегистрирован: download_specific_filing
+2025-03-23 19:09:45,847 - run_agent - INFO - Импортирован модуль: tools.sec_downloader
+2025-03-23 19:09:45,847 - run_agent - INFO - Импортировано модулей с инструментами: 4
+2025-03-23 19:09:45,848 - run_agent - INFO - Инициализация инвестиционного агента
+2025-03-23 19:09:45,848 - investment_agent - INFO - Initializing agent with 26 tools
+2025-03-23 19:09:45,848 - investment_agent - INFO - Investment Agent initialized successfully with 26 tools
+2025-03-23 19:09:45,848 - run_agent - INFO - Обработка запроса инвестиционным агентом
+2025-03-23 19:09:48,276 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-23 19:09:48,397 - run_agent - INFO - Получен ответ от агента (первые 200 символов): Какой тип отчетности вас интересует для Microsoft (MSFT)? Вы можете выбрать из следующих вариантов:
+
+1. Годовой отчет (10-K)
+2. Квартальный отчет (10-Q)
+3. Другие типы отчетов
+
+Пожалуйста, уточните, ч
+2025-03-23 19:09:48,397 - run_agent - INFO - Запрос успешно обработан
+2025-03-23 19:10:20,018 - run_agent - INFO - Получен запрос: Получить последний квартальный отчет (10-Q) для Microsoft (MSFT)
+2025-03-23 19:10:20,018 - run_agent - INFO - Сканирование директории с инструментами: /Users/zilber/Desktop/repo/ai_agent_finance/tools
+2025-03-23 19:10:20,281 - run_agent - INFO - Импортирован модуль: tools.registry
+2025-03-23 19:10:20,282 - pdf_analyzer - WARNING - No PDF extraction library found. Install PyMuPDF, PDFMiner, or PyPDF2.
+2025-03-23 19:10:20,283 - tools_registry - INFO - Инструмент зарегистрирован: extract_text_from_pdf
+2025-03-23 19:10:20,283 - tools_registry - INFO - Инструмент зарегистрирован: find_financial_tables
+2025-03-23 19:10:20,284 - tools_registry - INFO - Инструмент зарегистрирован: extract_key_metrics
+2025-03-23 19:10:20,284 - tools_registry - INFO - Инструмент зарегистрирован: analyze_financial_report
+2025-03-23 19:10:20,284 - tools_registry - INFO - Инструмент зарегистрирован: extract_specific_section
+2025-03-23 19:10:20,285 - tools_registry - INFO - Инструмент зарегистрирован: extract_related_keywords
+2025-03-23 19:10:20,285 - tools_registry - INFO - Инструмент зарегистрирован: summarize_report
+2025-03-23 19:10:20,285 - tools_registry - INFO - Инструмент зарегистрирован: get_and_analyze_latest_report
+2025-03-23 19:10:20,285 - run_agent - INFO - Импортирован модуль: tools.pdf_analyzer
+2025-03-23 19:10:20,287 - trade_tracker - INFO - База данных сделок инициализирована
+2025-03-23 19:10:20,288 - tools_registry - INFO - Инструмент зарегистрирован: add_trade
+2025-03-23 19:10:20,289 - tools_registry - INFO - Инструмент зарегистрирован: close_trade
+2025-03-23 19:10:20,290 - tools_registry - INFO - Инструмент зарегистрирован: get_trade
+2025-03-23 19:10:20,291 - tools_registry - INFO - Инструмент зарегистрирован: list_trades
+2025-03-23 19:10:20,291 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_statistics
+2025-03-23 19:10:20,292 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_form_questions
+2025-03-23 19:10:20,292 - tools_registry - INFO - Инструмент зарегистрирован: get_close_trade_form_questions
+2025-03-23 19:10:20,292 - run_agent - INFO - Импортирован модуль: tools.trade_tracker
+2025-03-23 19:10:20,309 - tools_registry - INFO - Инструмент зарегистрирован: search_filings
+2025-03-23 19:10:20,309 - tools_registry - INFO - Инструмент зарегистрирован: download_filing_as_pdf
+2025-03-23 19:10:20,310 - tools_registry - INFO - Инструмент зарегистрирован: get_recent_filing
+2025-03-23 19:10:20,310 - tools_registry - INFO - Инструмент зарегистрирован: download_recent_filing_as_pdf
+2025-03-23 19:10:20,311 - tools_registry - INFO - Инструмент зарегистрирован: search_filings_by_period
+2025-03-23 19:10:20,312 - tools_registry - INFO - Инструмент зарегистрирован: format_filing_summary
+2025-03-23 19:10:20,312 - tools_registry - INFO - Инструмент зарегистрирован: get_filing_list_summary
+2025-03-23 19:10:20,313 - tools_registry - INFO - Инструмент зарегистрирован: get_company_quarterly_report
+2025-03-23 19:10:20,313 - tools_registry - INFO - Инструмент зарегистрирован: get_company_annual_report
+2025-03-23 19:10:20,314 - tools_registry - INFO - Инструмент зарегистрирован: get_company_recent_filings
+2025-03-23 19:10:20,314 - tools_registry - INFO - Инструмент зарегистрирован: download_specific_filing
+2025-03-23 19:10:20,314 - run_agent - INFO - Импортирован модуль: tools.sec_downloader
+2025-03-23 19:10:20,314 - run_agent - INFO - Импортировано модулей с инструментами: 4
+2025-03-23 19:10:20,315 - run_agent - INFO - Инициализация инвестиционного агента
+2025-03-23 19:10:20,315 - investment_agent - INFO - Initializing agent with 26 tools
+2025-03-23 19:10:20,315 - investment_agent - INFO - Investment Agent initialized successfully with 26 tools
+2025-03-23 19:10:20,315 - run_agent - INFO - Обработка запроса инвестиционным агентом
+2025-03-23 19:10:21,996 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-23 19:10:22,125 - sec_downloader - INFO - Поиск отчетов для MSFT
+2025-03-23 19:10:23,207 - sec_downloader - INFO - Найдено 1 отчетов для MSFT
+2025-03-23 19:10:23,208 - sec_downloader - INFO - Скачивание документа в PDF: MSFT_10-Q_2025-01-29.pdf
+2025-03-23 19:10:24,859 - sec_downloader - INFO - Документ успешно скачан: downloaded_filings/MSFT_10-Q_2025-01-29.pdf
+2025-03-23 19:10:26,641 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-23 19:10:26,747 - run_agent - INFO - Получен ответ от агента (первые 200 символов): Я не смог извлечь текст из PDF-файла из-за отсутствия библиотеки для работы с PDF. Однако я могу помочь вам скачать отчет и проанализировать его, если у вас есть соответствующая библиотека. Хотите, чт
+2025-03-23 19:10:26,747 - run_agent - INFO - Запрос успешно обработан
+2025-03-23 22:19:52,991 - run_agent - INFO - Получен запрос: отчетность NVDA
+2025-03-23 22:19:52,991 - run_agent - INFO - Сканирование директории с инструментами: /Users/zilber/Desktop/repo/ai_agent_finance/tools
+2025-03-23 22:19:53,363 - run_agent - INFO - Импортирован модуль: tools.registry
+2025-03-23 22:19:53,363 - pdf_analyzer - WARNING - No PDF extraction library found. Install PyMuPDF, PDFMiner, or PyPDF2.
+2025-03-23 22:19:53,364 - tools_registry - INFO - Инструмент зарегистрирован: extract_text_from_pdf
+2025-03-23 22:19:53,365 - tools_registry - INFO - Инструмент зарегистрирован: find_financial_tables
+2025-03-23 22:19:53,365 - tools_registry - INFO - Инструмент зарегистрирован: extract_key_metrics
+2025-03-23 22:19:53,365 - tools_registry - INFO - Инструмент зарегистрирован: analyze_financial_report
+2025-03-23 22:19:53,366 - tools_registry - INFO - Инструмент зарегистрирован: extract_specific_section
+2025-03-23 22:19:53,366 - tools_registry - INFO - Инструмент зарегистрирован: extract_related_keywords
+2025-03-23 22:19:53,366 - tools_registry - INFO - Инструмент зарегистрирован: summarize_report
+2025-03-23 22:19:53,367 - tools_registry - INFO - Инструмент зарегистрирован: get_and_analyze_latest_report
+2025-03-23 22:19:53,367 - run_agent - INFO - Импортирован модуль: tools.pdf_analyzer
+2025-03-23 22:19:53,370 - trade_tracker - INFO - База данных сделок инициализирована
+2025-03-23 22:19:53,371 - tools_registry - INFO - Инструмент зарегистрирован: add_trade
+2025-03-23 22:19:53,372 - tools_registry - INFO - Инструмент зарегистрирован: close_trade
+2025-03-23 22:19:53,373 - tools_registry - INFO - Инструмент зарегистрирован: get_trade
+2025-03-23 22:19:53,374 - tools_registry - INFO - Инструмент зарегистрирован: list_trades
+2025-03-23 22:19:53,374 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_statistics
+2025-03-23 22:19:53,375 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_form_questions
+2025-03-23 22:19:53,375 - tools_registry - INFO - Инструмент зарегистрирован: get_close_trade_form_questions
+2025-03-23 22:19:53,375 - run_agent - INFO - Импортирован модуль: tools.trade_tracker
+2025-03-23 22:19:53,401 - tools_registry - INFO - Инструмент зарегистрирован: search_filings
+2025-03-23 22:19:53,402 - tools_registry - INFO - Инструмент зарегистрирован: download_filing_as_pdf
+2025-03-23 22:19:53,402 - tools_registry - INFO - Инструмент зарегистрирован: get_recent_filing
+2025-03-23 22:19:53,403 - tools_registry - INFO - Инструмент зарегистрирован: download_recent_filing_as_pdf
+2025-03-23 22:19:53,404 - tools_registry - INFO - Инструмент зарегистрирован: search_filings_by_period
+2025-03-23 22:19:53,404 - tools_registry - INFO - Инструмент зарегистрирован: format_filing_summary
+2025-03-23 22:19:53,405 - tools_registry - INFO - Инструмент зарегистрирован: get_filing_list_summary
+2025-03-23 22:19:53,405 - tools_registry - INFO - Инструмент зарегистрирован: get_company_quarterly_report
+2025-03-23 22:19:53,406 - tools_registry - INFO - Инструмент зарегистрирован: get_company_annual_report
+2025-03-23 22:19:53,406 - tools_registry - INFO - Инструмент зарегистрирован: get_company_recent_filings
+2025-03-23 22:19:53,407 - tools_registry - INFO - Инструмент зарегистрирован: download_specific_filing
+2025-03-23 22:19:53,407 - run_agent - INFO - Импортирован модуль: tools.sec_downloader
+2025-03-23 22:19:53,407 - run_agent - INFO - Импортировано модулей с инструментами: 4
+2025-03-23 22:19:53,408 - run_agent - INFO - Инициализация инвестиционного агента
+2025-03-23 22:19:53,408 - investment_agent - INFO - Initializing agent with 26 tools
+2025-03-23 22:19:53,408 - investment_agent - INFO - Investment Agent initialized successfully with 26 tools
+2025-03-23 22:19:53,408 - run_agent - INFO - Обработка запроса инвестиционным агентом
+2025-03-23 22:19:56,157 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-23 22:19:56,304 - run_agent - INFO - Получен ответ от агента (первые 200 символов): Какой тип отчетности вас интересует для компании NVIDIA (тикер: NVDA)? Вы можете выбрать из следующих вариантов:
+
+1. Годовой отчет (10-K)
+2. Квартальный отчет (10-Q)
+
+Пожалуйста, уточните, какой тип о
+2025-03-23 22:19:56,304 - run_agent - INFO - Запрос успешно обработан
+2025-03-23 22:20:18,164 - run_agent - INFO - Получен запрос: Получить последний квартальный отчет (10-Q) для компании NVIDIA (тикер: NVDA)
+2025-03-23 22:20:18,165 - run_agent - INFO - Сканирование директории с инструментами: /Users/zilber/Desktop/repo/ai_agent_finance/tools
+2025-03-23 22:20:18,426 - run_agent - INFO - Импортирован модуль: tools.registry
+2025-03-23 22:20:18,426 - pdf_analyzer - WARNING - No PDF extraction library found. Install PyMuPDF, PDFMiner, or PyPDF2.
+2025-03-23 22:20:18,427 - tools_registry - INFO - Инструмент зарегистрирован: extract_text_from_pdf
+2025-03-23 22:20:18,427 - tools_registry - INFO - Инструмент зарегистрирован: find_financial_tables
+2025-03-23 22:20:18,428 - tools_registry - INFO - Инструмент зарегистрирован: extract_key_metrics
+2025-03-23 22:20:18,428 - tools_registry - INFO - Инструмент зарегистрирован: analyze_financial_report
+2025-03-23 22:20:18,428 - tools_registry - INFO - Инструмент зарегистрирован: extract_specific_section
+2025-03-23 22:20:18,429 - tools_registry - INFO - Инструмент зарегистрирован: extract_related_keywords
+2025-03-23 22:20:18,429 - tools_registry - INFO - Инструмент зарегистрирован: summarize_report
+2025-03-23 22:20:18,430 - tools_registry - INFO - Инструмент зарегистрирован: get_and_analyze_latest_report
+2025-03-23 22:20:18,430 - run_agent - INFO - Импортирован модуль: tools.pdf_analyzer
+2025-03-23 22:20:18,431 - trade_tracker - INFO - База данных сделок инициализирована
+2025-03-23 22:20:18,432 - tools_registry - INFO - Инструмент зарегистрирован: add_trade
+2025-03-23 22:20:18,433 - tools_registry - INFO - Инструмент зарегистрирован: close_trade
+2025-03-23 22:20:18,434 - tools_registry - INFO - Инструмент зарегистрирован: get_trade
+2025-03-23 22:20:18,435 - tools_registry - INFO - Инструмент зарегистрирован: list_trades
+2025-03-23 22:20:18,435 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_statistics
+2025-03-23 22:20:18,436 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_form_questions
+2025-03-23 22:20:18,436 - tools_registry - INFO - Инструмент зарегистрирован: get_close_trade_form_questions
+2025-03-23 22:20:18,436 - run_agent - INFO - Импортирован модуль: tools.trade_tracker
+2025-03-23 22:20:18,453 - tools_registry - INFO - Инструмент зарегистрирован: search_filings
+2025-03-23 22:20:18,454 - tools_registry - INFO - Инструмент зарегистрирован: download_filing_as_pdf
+2025-03-23 22:20:18,454 - tools_registry - INFO - Инструмент зарегистрирован: get_recent_filing
+2025-03-23 22:20:18,455 - tools_registry - INFO - Инструмент зарегистрирован: download_recent_filing_as_pdf
+2025-03-23 22:20:18,456 - tools_registry - INFO - Инструмент зарегистрирован: search_filings_by_period
+2025-03-23 22:20:18,456 - tools_registry - INFO - Инструмент зарегистрирован: format_filing_summary
+2025-03-23 22:20:18,456 - tools_registry - INFO - Инструмент зарегистрирован: get_filing_list_summary
+2025-03-23 22:20:18,457 - tools_registry - INFO - Инструмент зарегистрирован: get_company_quarterly_report
+2025-03-23 22:20:18,457 - tools_registry - INFO - Инструмент зарегистрирован: get_company_annual_report
+2025-03-23 22:20:18,458 - tools_registry - INFO - Инструмент зарегистрирован: get_company_recent_filings
+2025-03-23 22:20:18,459 - tools_registry - INFO - Инструмент зарегистрирован: download_specific_filing
+2025-03-23 22:20:18,459 - run_agent - INFO - Импортирован модуль: tools.sec_downloader
+2025-03-23 22:20:18,459 - run_agent - INFO - Импортировано модулей с инструментами: 4
+2025-03-23 22:20:18,459 - run_agent - INFO - Инициализация инвестиционного агента
+2025-03-23 22:20:18,459 - investment_agent - INFO - Initializing agent with 26 tools
+2025-03-23 22:20:18,459 - investment_agent - INFO - Investment Agent initialized successfully with 26 tools
+2025-03-23 22:20:18,459 - run_agent - INFO - Обработка запроса инвестиционным агентом
+2025-03-23 22:20:20,726 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-23 22:20:20,898 - sec_downloader - INFO - Поиск отчетов для NVDA
+2025-03-23 22:20:22,284 - sec_downloader - INFO - Найдено 1 отчетов для NVDA
+2025-03-23 22:20:22,285 - sec_downloader - INFO - Скачивание документа в PDF: NVDA_10-Q_2024-11-20.pdf
+2025-03-23 22:20:24,191 - sec_downloader - INFO - Документ успешно скачан: downloaded_filings/NVDA_10-Q_2024-11-20.pdf
+2025-03-23 22:20:25,988 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-23 22:20:26,057 - run_agent - INFO - Получен ответ от агента (первые 200 символов): Похоже, возникла проблема с извлечением текста из PDF-файла. Однако я могу помочь вам скачать отчет и предоставить информацию о его содержании. Хотите, чтобы я попробовал другой подход для анализа?
+2025-03-23 22:20:26,057 - run_agent - INFO - Запрос успешно обработан
+2025-03-23 22:26:16,355 - run_agent - INFO - Получен запрос: отчетность NVDA
+2025-03-23 22:26:16,355 - run_agent - INFO - Сканирование директории с инструментами: /Users/zilber/Desktop/repo/ai_agent_finance/tools
+2025-03-23 22:26:16,613 - run_agent - INFO - Импортирован модуль: tools.registry
+2025-03-23 22:26:16,614 - pdf_analyzer - WARNING - No PDF extraction library found. Install PyMuPDF, PDFMiner, or PyPDF2.
+2025-03-23 22:26:16,615 - tools_registry - INFO - Инструмент зарегистрирован: extract_text_from_pdf
+2025-03-23 22:26:16,615 - tools_registry - INFO - Инструмент зарегистрирован: find_financial_tables
+2025-03-23 22:26:16,615 - tools_registry - INFO - Инструмент зарегистрирован: extract_key_metrics
+2025-03-23 22:26:16,616 - tools_registry - INFO - Инструмент зарегистрирован: analyze_financial_report
+2025-03-23 22:26:16,616 - tools_registry - INFO - Инструмент зарегистрирован: extract_specific_section
+2025-03-23 22:26:16,617 - tools_registry - INFO - Инструмент зарегистрирован: extract_related_keywords
+2025-03-23 22:26:16,617 - tools_registry - INFO - Инструмент зарегистрирован: summarize_report
+2025-03-23 22:26:16,617 - tools_registry - INFO - Инструмент зарегистрирован: get_and_analyze_latest_report
+2025-03-23 22:26:16,617 - run_agent - INFO - Импортирован модуль: tools.pdf_analyzer
+2025-03-23 22:26:16,620 - trade_tracker - INFO - База данных сделок инициализирована
+2025-03-23 22:26:16,621 - tools_registry - INFO - Инструмент зарегистрирован: add_trade
+2025-03-23 22:26:16,622 - tools_registry - INFO - Инструмент зарегистрирован: close_trade
+2025-03-23 22:26:16,622 - tools_registry - INFO - Инструмент зарегистрирован: get_trade
+2025-03-23 22:26:16,623 - tools_registry - INFO - Инструмент зарегистрирован: list_trades
+2025-03-23 22:26:16,624 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_statistics
+2025-03-23 22:26:16,624 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_form_questions
+2025-03-23 22:26:16,625 - tools_registry - INFO - Инструмент зарегистрирован: get_close_trade_form_questions
+2025-03-23 22:26:16,625 - run_agent - INFO - Импортирован модуль: tools.trade_tracker
+2025-03-23 22:26:16,642 - tools_registry - INFO - Инструмент зарегистрирован: search_filings
+2025-03-23 22:26:16,643 - tools_registry - INFO - Инструмент зарегистрирован: download_filing_as_pdf
+2025-03-23 22:26:16,643 - tools_registry - INFO - Инструмент зарегистрирован: get_recent_filing
+2025-03-23 22:26:16,644 - tools_registry - INFO - Инструмент зарегистрирован: download_recent_filing_as_pdf
+2025-03-23 22:26:16,644 - tools_registry - INFO - Инструмент зарегистрирован: search_filings_by_period
+2025-03-23 22:26:16,645 - tools_registry - INFO - Инструмент зарегистрирован: format_filing_summary
+2025-03-23 22:26:16,645 - tools_registry - INFO - Инструмент зарегистрирован: get_filing_list_summary
+2025-03-23 22:26:16,646 - tools_registry - INFO - Инструмент зарегистрирован: get_company_quarterly_report
+2025-03-23 22:26:16,646 - tools_registry - INFO - Инструмент зарегистрирован: get_company_annual_report
+2025-03-23 22:26:16,647 - tools_registry - INFO - Инструмент зарегистрирован: get_company_recent_filings
+2025-03-23 22:26:16,647 - tools_registry - INFO - Инструмент зарегистрирован: download_specific_filing
+2025-03-23 22:26:16,647 - run_agent - INFO - Импортирован модуль: tools.sec_downloader
+2025-03-23 22:26:16,648 - run_agent - INFO - Импортировано модулей с инструментами: 4
+2025-03-23 22:26:16,648 - run_agent - INFO - Инициализация инвестиционного агента
+2025-03-23 22:26:16,648 - investment_agent - INFO - Initializing agent with 26 tools
+2025-03-23 22:26:16,648 - investment_agent - INFO - Investment Agent initialized successfully with 26 tools
+2025-03-23 22:26:16,648 - run_agent - INFO - Обработка запроса инвестиционным агентом
+2025-03-23 22:26:19,058 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-23 22:26:19,187 - run_agent - INFO - Получен ответ от агента (первые 200 символов): Какой тип отчетности вас интересует для компании NVIDIA (тикер: NVDA)? Вы можете выбрать из следующих вариантов:
+
+1. Годовой отчет (10-K)
+2. Квартальный отчет (10-Q)
+3. Другие типы отчетов (например, 
+2025-03-23 22:26:19,187 - run_agent - INFO - Запрос успешно обработан
+2025-03-23 22:26:43,711 - run_agent - INFO - Получен запрос: Отчет 10-Q компании NVIDIA
+2025-03-23 22:26:43,711 - run_agent - INFO - Сканирование директории с инструментами: /Users/zilber/Desktop/repo/ai_agent_finance/tools
+2025-03-23 22:26:44,013 - run_agent - INFO - Импортирован модуль: tools.registry
+2025-03-23 22:26:44,014 - pdf_analyzer - WARNING - No PDF extraction library found. Install PyMuPDF, PDFMiner, or PyPDF2.
+2025-03-23 22:26:44,015 - tools_registry - INFO - Инструмент зарегистрирован: extract_text_from_pdf
+2025-03-23 22:26:44,015 - tools_registry - INFO - Инструмент зарегистрирован: find_financial_tables
+2025-03-23 22:26:44,016 - tools_registry - INFO - Инструмент зарегистрирован: extract_key_metrics
+2025-03-23 22:26:44,016 - tools_registry - INFO - Инструмент зарегистрирован: analyze_financial_report
+2025-03-23 22:26:44,017 - tools_registry - INFO - Инструмент зарегистрирован: extract_specific_section
+2025-03-23 22:26:44,017 - tools_registry - INFO - Инструмент зарегистрирован: extract_related_keywords
+2025-03-23 22:26:44,017 - tools_registry - INFO - Инструмент зарегистрирован: summarize_report
+2025-03-23 22:26:44,018 - tools_registry - INFO - Инструмент зарегистрирован: get_and_analyze_latest_report
+2025-03-23 22:26:44,018 - run_agent - INFO - Импортирован модуль: tools.pdf_analyzer
+2025-03-23 22:26:44,019 - trade_tracker - INFO - База данных сделок инициализирована
+2025-03-23 22:26:44,021 - tools_registry - INFO - Инструмент зарегистрирован: add_trade
+2025-03-23 22:26:44,022 - tools_registry - INFO - Инструмент зарегистрирован: close_trade
+2025-03-23 22:26:44,022 - tools_registry - INFO - Инструмент зарегистрирован: get_trade
+2025-03-23 22:26:44,023 - tools_registry - INFO - Инструмент зарегистрирован: list_trades
+2025-03-23 22:26:44,024 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_statistics
+2025-03-23 22:26:44,024 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_form_questions
+2025-03-23 22:26:44,024 - tools_registry - INFO - Инструмент зарегистрирован: get_close_trade_form_questions
+2025-03-23 22:26:44,024 - run_agent - INFO - Импортирован модуль: tools.trade_tracker
+2025-03-23 22:26:44,042 - tools_registry - INFO - Инструмент зарегистрирован: search_filings
+2025-03-23 22:26:44,043 - tools_registry - INFO - Инструмент зарегистрирован: download_filing_as_pdf
+2025-03-23 22:26:44,043 - tools_registry - INFO - Инструмент зарегистрирован: get_recent_filing
+2025-03-23 22:26:44,044 - tools_registry - INFO - Инструмент зарегистрирован: download_recent_filing_as_pdf
+2025-03-23 22:26:44,045 - tools_registry - INFO - Инструмент зарегистрирован: search_filings_by_period
+2025-03-23 22:26:44,045 - tools_registry - INFO - Инструмент зарегистрирован: format_filing_summary
+2025-03-23 22:26:44,046 - tools_registry - INFO - Инструмент зарегистрирован: get_filing_list_summary
+2025-03-23 22:26:44,046 - tools_registry - INFO - Инструмент зарегистрирован: get_company_quarterly_report
+2025-03-23 22:26:44,047 - tools_registry - INFO - Инструмент зарегистрирован: get_company_annual_report
+2025-03-23 22:26:44,048 - tools_registry - INFO - Инструмент зарегистрирован: get_company_recent_filings
+2025-03-23 22:26:44,048 - tools_registry - INFO - Инструмент зарегистрирован: download_specific_filing
+2025-03-23 22:26:44,048 - run_agent - INFO - Импортирован модуль: tools.sec_downloader
+2025-03-23 22:26:44,048 - run_agent - INFO - Импортировано модулей с инструментами: 4
+2025-03-23 22:26:44,048 - run_agent - INFO - Инициализация инвестиционного агента
+2025-03-23 22:26:44,048 - investment_agent - INFO - Initializing agent with 26 tools
+2025-03-23 22:26:44,048 - investment_agent - INFO - Investment Agent initialized successfully with 26 tools
+2025-03-23 22:26:44,048 - run_agent - INFO - Обработка запроса инвестиционным агентом
+2025-03-23 22:26:46,062 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-23 22:26:46,219 - sec_downloader - INFO - Поиск отчетов для NVDA
+2025-03-23 22:26:47,558 - sec_downloader - INFO - Найдено 1 отчетов для NVDA
+2025-03-23 22:26:47,559 - sec_downloader - INFO - Скачивание документа в PDF: NVDA_10-Q_2024-11-20.pdf
+2025-03-23 22:26:50,170 - sec_downloader - INFO - Документ успешно скачан: downloaded_filings/NVDA_10-Q_2024-11-20.pdf
+2025-03-23 22:26:51,883 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-23 22:26:52,007 - run_agent - INFO - Получен ответ от агента (первые 200 символов): К сожалению, возникла проблема с извлечением текста из PDF-файла отчета 10-Q компании NVIDIA. Я могу попробовать другие методы для анализа или помочь с другой информацией. Что бы вы хотели сделать дал
+2025-03-23 22:26:52,008 - run_agent - INFO - Запрос успешно обработан
+2025-03-23 22:38:00,448 - run_agent - INFO - Получен запрос: последние сделки с инструментом ES500
+2025-03-23 22:38:00,448 - run_agent - INFO - Сканирование директории с инструментами: /Users/zilber/Desktop/repo/ai_agent_finance/tools
+2025-03-23 22:38:00,707 - run_agent - INFO - Импортирован модуль: tools.registry
+2025-03-23 22:38:00,707 - pdf_analyzer - WARNING - No PDF extraction library found. Install PyMuPDF, PDFMiner, or PyPDF2.
+2025-03-23 22:38:00,708 - tools_registry - INFO - Инструмент зарегистрирован: extract_text_from_pdf
+2025-03-23 22:38:00,709 - tools_registry - INFO - Инструмент зарегистрирован: find_financial_tables
+2025-03-23 22:38:00,709 - tools_registry - INFO - Инструмент зарегистрирован: extract_key_metrics
+2025-03-23 22:38:00,709 - tools_registry - INFO - Инструмент зарегистрирован: analyze_financial_report
+2025-03-23 22:38:00,710 - tools_registry - INFO - Инструмент зарегистрирован: extract_specific_section
+2025-03-23 22:38:00,710 - tools_registry - INFO - Инструмент зарегистрирован: extract_related_keywords
+2025-03-23 22:38:00,711 - tools_registry - INFO - Инструмент зарегистрирован: summarize_report
+2025-03-23 22:38:00,711 - tools_registry - INFO - Инструмент зарегистрирован: get_and_analyze_latest_report
+2025-03-23 22:38:00,711 - run_agent - INFO - Импортирован модуль: tools.pdf_analyzer
+2025-03-23 22:38:00,713 - trade_tracker - INFO - База данных сделок инициализирована
+2025-03-23 22:38:00,714 - tools_registry - INFO - Инструмент зарегистрирован: add_trade
+2025-03-23 22:38:00,715 - tools_registry - INFO - Инструмент зарегистрирован: close_trade
+2025-03-23 22:38:00,715 - tools_registry - INFO - Инструмент зарегистрирован: get_trade
+2025-03-23 22:38:00,716 - tools_registry - INFO - Инструмент зарегистрирован: list_trades
+2025-03-23 22:38:00,717 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_statistics
+2025-03-23 22:38:00,717 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_form_questions
+2025-03-23 22:38:00,717 - tools_registry - INFO - Инструмент зарегистрирован: get_close_trade_form_questions
+2025-03-23 22:38:00,717 - run_agent - INFO - Импортирован модуль: tools.trade_tracker
+2025-03-23 22:38:00,734 - tools_registry - INFO - Инструмент зарегистрирован: search_filings
+2025-03-23 22:38:00,735 - tools_registry - INFO - Инструмент зарегистрирован: download_filing_as_pdf
+2025-03-23 22:38:00,736 - tools_registry - INFO - Инструмент зарегистрирован: get_recent_filing
+2025-03-23 22:38:00,736 - tools_registry - INFO - Инструмент зарегистрирован: download_recent_filing_as_pdf
+2025-03-23 22:38:00,737 - tools_registry - INFO - Инструмент зарегистрирован: search_filings_by_period
+2025-03-23 22:38:00,737 - tools_registry - INFO - Инструмент зарегистрирован: format_filing_summary
+2025-03-23 22:38:00,738 - tools_registry - INFO - Инструмент зарегистрирован: get_filing_list_summary
+2025-03-23 22:38:00,738 - tools_registry - INFO - Инструмент зарегистрирован: get_company_quarterly_report
+2025-03-23 22:38:00,739 - tools_registry - INFO - Инструмент зарегистрирован: get_company_annual_report
+2025-03-23 22:38:00,739 - tools_registry - INFO - Инструмент зарегистрирован: get_company_recent_filings
+2025-03-23 22:38:00,740 - tools_registry - INFO - Инструмент зарегистрирован: download_specific_filing
+2025-03-23 22:38:00,740 - run_agent - INFO - Импортирован модуль: tools.sec_downloader
+2025-03-23 22:38:00,740 - run_agent - INFO - Импортировано модулей с инструментами: 4
+2025-03-23 22:38:00,740 - run_agent - INFO - Инициализация инвестиционного агента
+2025-03-23 22:38:00,740 - investment_agent - INFO - Initializing agent with 26 tools
+2025-03-23 22:38:00,740 - investment_agent - INFO - Investment Agent initialized successfully with 26 tools
+2025-03-23 22:38:00,740 - run_agent - INFO - Обработка запроса инвестиционным агентом
+2025-03-23 22:38:03,150 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-23 22:38:06,054 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-23 22:38:06,196 - run_agent - INFO - Получен ответ от агента (первые 200 символов): Here are the latest trades with the instrument ES500:
+
+1. **Trade ID:** 4
+   - **Strategy:** ES Futures
+   - **Trade Type:** Futures
+   - **Position Type:** Long
+   - **Quantity:** 5
+   - **Open Date:
+2025-03-23 22:38:06,197 - run_agent - INFO - Запрос успешно обработан
+2025-03-23 22:43:38,871 - run_agent - INFO - Получен запрос: отчетность BAC
+2025-03-23 22:43:38,871 - run_agent - INFO - Сканирование директории с инструментами: /Users/zilber/Desktop/repo/ai_agent_finance/tools
+2025-03-23 22:43:39,158 - run_agent - INFO - Импортирован модуль: tools.registry
+2025-03-23 22:43:39,176 - pdf_analyzer - INFO - Using PyPDF2 for PDF extraction
+2025-03-23 22:43:39,177 - tools_registry - INFO - Инструмент зарегистрирован: extract_text_from_pdf
+2025-03-23 22:43:39,178 - tools_registry - INFO - Инструмент зарегистрирован: find_financial_tables
+2025-03-23 22:43:39,178 - tools_registry - INFO - Инструмент зарегистрирован: extract_key_metrics
+2025-03-23 22:43:39,179 - tools_registry - INFO - Инструмент зарегистрирован: analyze_financial_report
+2025-03-23 22:43:39,179 - tools_registry - INFO - Инструмент зарегистрирован: extract_specific_section
+2025-03-23 22:43:39,180 - tools_registry - INFO - Инструмент зарегистрирован: extract_related_keywords
+2025-03-23 22:43:39,180 - tools_registry - INFO - Инструмент зарегистрирован: summarize_report
+2025-03-23 22:43:39,180 - tools_registry - INFO - Инструмент зарегистрирован: get_and_analyze_latest_report
+2025-03-23 22:43:39,180 - run_agent - INFO - Импортирован модуль: tools.pdf_analyzer
+2025-03-23 22:43:39,182 - trade_tracker - INFO - База данных сделок инициализирована
+2025-03-23 22:43:39,183 - tools_registry - INFO - Инструмент зарегистрирован: add_trade
+2025-03-23 22:43:39,184 - tools_registry - INFO - Инструмент зарегистрирован: close_trade
+2025-03-23 22:43:39,185 - tools_registry - INFO - Инструмент зарегистрирован: get_trade
+2025-03-23 22:43:39,187 - tools_registry - INFO - Инструмент зарегистрирован: list_trades
+2025-03-23 22:43:39,187 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_statistics
+2025-03-23 22:43:39,188 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_form_questions
+2025-03-23 22:43:39,188 - tools_registry - INFO - Инструмент зарегистрирован: get_close_trade_form_questions
+2025-03-23 22:43:39,188 - run_agent - INFO - Импортирован модуль: tools.trade_tracker
+2025-03-23 22:43:39,209 - tools_registry - INFO - Инструмент зарегистрирован: search_filings
+2025-03-23 22:43:39,210 - tools_registry - INFO - Инструмент зарегистрирован: download_filing_as_pdf
+2025-03-23 22:43:39,211 - tools_registry - INFO - Инструмент зарегистрирован: get_recent_filing
+2025-03-23 22:43:39,211 - tools_registry - INFO - Инструмент зарегистрирован: download_recent_filing_as_pdf
+2025-03-23 22:43:39,212 - tools_registry - INFO - Инструмент зарегистрирован: search_filings_by_period
+2025-03-23 22:43:39,213 - tools_registry - INFO - Инструмент зарегистрирован: format_filing_summary
+2025-03-23 22:43:39,213 - tools_registry - INFO - Инструмент зарегистрирован: get_filing_list_summary
+2025-03-23 22:43:39,214 - tools_registry - INFO - Инструмент зарегистрирован: get_company_quarterly_report
+2025-03-23 22:43:39,215 - tools_registry - INFO - Инструмент зарегистрирован: get_company_annual_report
+2025-03-23 22:43:39,215 - tools_registry - INFO - Инструмент зарегистрирован: get_company_recent_filings
+2025-03-23 22:43:39,216 - tools_registry - INFO - Инструмент зарегистрирован: download_specific_filing
+2025-03-23 22:43:39,216 - run_agent - INFO - Импортирован модуль: tools.sec_downloader
+2025-03-23 22:43:39,216 - run_agent - INFO - Импортировано модулей с инструментами: 4
+2025-03-23 22:43:39,216 - run_agent - INFO - Инициализация инвестиционного агента
+2025-03-23 22:43:39,216 - investment_agent - INFO - Initializing agent with 26 tools
+2025-03-23 22:43:39,216 - investment_agent - INFO - Investment Agent initialized successfully with 26 tools
+2025-03-23 22:43:39,216 - run_agent - INFO - Обработка запроса инвестиционным агентом
+2025-03-23 22:43:41,107 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-23 22:43:41,277 - sec_downloader - INFO - Поиск отчетов для BAC
+2025-03-23 22:43:43,064 - sec_downloader - INFO - Найдено 5 отчетов для BAC
+2025-03-23 22:43:45,386 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-23 22:43:45,464 - run_agent - INFO - Получен ответ от агента (первые 200 символов): Вот последние отчеты для Bank of America (BAC):
+
+1. **424B2** от 2025-03-21: Проспект [Rule 424(b)(2)]
+2. **424B2** от 2025-03-21: Проспект [Rule 424(b)(2)]
+3. **424B2** от 2025-03-21: Проспект [Rule 
+2025-03-23 22:43:45,465 - run_agent - INFO - Запрос успешно обработан
+2025-03-23 22:44:22,840 - run_agent - INFO - Получен запрос: получить последний отчет 10-Q для Bank of America (BAC)
+2025-03-23 22:44:22,840 - run_agent - INFO - Сканирование директории с инструментами: /Users/zilber/Desktop/repo/ai_agent_finance/tools
+2025-03-23 22:44:23,097 - run_agent - INFO - Импортирован модуль: tools.registry
+2025-03-23 22:44:23,107 - pdf_analyzer - INFO - Using PyPDF2 for PDF extraction
+2025-03-23 22:44:23,108 - tools_registry - INFO - Инструмент зарегистрирован: extract_text_from_pdf
+2025-03-23 22:44:23,109 - tools_registry - INFO - Инструмент зарегистрирован: find_financial_tables
+2025-03-23 22:44:23,109 - tools_registry - INFO - Инструмент зарегистрирован: extract_key_metrics
+2025-03-23 22:44:23,109 - tools_registry - INFO - Инструмент зарегистрирован: analyze_financial_report
+2025-03-23 22:44:23,110 - tools_registry - INFO - Инструмент зарегистрирован: extract_specific_section
+2025-03-23 22:44:23,110 - tools_registry - INFO - Инструмент зарегистрирован: extract_related_keywords
+2025-03-23 22:44:23,110 - tools_registry - INFO - Инструмент зарегистрирован: summarize_report
+2025-03-23 22:44:23,111 - tools_registry - INFO - Инструмент зарегистрирован: get_and_analyze_latest_report
+2025-03-23 22:44:23,111 - run_agent - INFO - Импортирован модуль: tools.pdf_analyzer
+2025-03-23 22:44:23,112 - trade_tracker - INFO - База данных сделок инициализирована
+2025-03-23 22:44:23,114 - tools_registry - INFO - Инструмент зарегистрирован: add_trade
+2025-03-23 22:44:23,115 - tools_registry - INFO - Инструмент зарегистрирован: close_trade
+2025-03-23 22:44:23,115 - tools_registry - INFO - Инструмент зарегистрирован: get_trade
+2025-03-23 22:44:23,116 - tools_registry - INFO - Инструмент зарегистрирован: list_trades
+2025-03-23 22:44:23,117 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_statistics
+2025-03-23 22:44:23,117 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_form_questions
+2025-03-23 22:44:23,117 - tools_registry - INFO - Инструмент зарегистрирован: get_close_trade_form_questions
+2025-03-23 22:44:23,117 - run_agent - INFO - Импортирован модуль: tools.trade_tracker
+2025-03-23 22:44:23,136 - tools_registry - INFO - Инструмент зарегистрирован: search_filings
+2025-03-23 22:44:23,136 - tools_registry - INFO - Инструмент зарегистрирован: download_filing_as_pdf
+2025-03-23 22:44:23,137 - tools_registry - INFO - Инструмент зарегистрирован: get_recent_filing
+2025-03-23 22:44:23,137 - tools_registry - INFO - Инструмент зарегистрирован: download_recent_filing_as_pdf
+2025-03-23 22:44:23,138 - tools_registry - INFO - Инструмент зарегистрирован: search_filings_by_period
+2025-03-23 22:44:23,139 - tools_registry - INFO - Инструмент зарегистрирован: format_filing_summary
+2025-03-23 22:44:23,139 - tools_registry - INFO - Инструмент зарегистрирован: get_filing_list_summary
+2025-03-23 22:44:23,140 - tools_registry - INFO - Инструмент зарегистрирован: get_company_quarterly_report
+2025-03-23 22:44:23,140 - tools_registry - INFO - Инструмент зарегистрирован: get_company_annual_report
+2025-03-23 22:44:23,141 - tools_registry - INFO - Инструмент зарегистрирован: get_company_recent_filings
+2025-03-23 22:44:23,141 - tools_registry - INFO - Инструмент зарегистрирован: download_specific_filing
+2025-03-23 22:44:23,141 - run_agent - INFO - Импортирован модуль: tools.sec_downloader
+2025-03-23 22:44:23,141 - run_agent - INFO - Импортировано модулей с инструментами: 4
+2025-03-23 22:44:23,142 - run_agent - INFO - Инициализация инвестиционного агента
+2025-03-23 22:44:23,142 - investment_agent - INFO - Initializing agent with 26 tools
+2025-03-23 22:44:23,142 - investment_agent - INFO - Investment Agent initialized successfully with 26 tools
+2025-03-23 22:44:23,142 - run_agent - INFO - Обработка запроса инвестиционным агентом
+2025-03-23 22:44:25,386 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-23 22:44:25,525 - sec_downloader - INFO - Поиск отчетов для BAC
+2025-03-23 22:44:26,692 - sec_downloader - INFO - Найдено 1 отчетов для BAC
+2025-03-23 22:44:26,694 - sec_downloader - INFO - Скачивание документа в PDF: BAC_10-Q_2024-10-29.pdf
+2025-03-23 22:44:29,243 - sec_downloader - INFO - Документ успешно скачан: downloaded_filings/BAC_10-Q_2024-10-29.pdf
+2025-03-23 22:44:29,244 - pdf_analyzer - INFO - Начинаем извлечение текста из downloaded_filings/BAC_10-Q_2024-10-29.pdf
+2025-03-23 22:44:38,272 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-23 22:44:38,385 - run_agent - INFO - Получен ответ от агента (первые 200 символов): Я успешно скачал и проанализировал последний отчет 10-Q для Bank of America (BAC). Вот основные моменты:
+
+### Тип отчета:
+- **10-K** (возможно, ошибка в определении типа, так как запрашивался 10-Q)
+
+#
+2025-03-23 22:44:38,386 - run_agent - INFO - Запрос успешно обработан
+2025-03-23 22:45:48,792 - run_agent - INFO - Получен запрос: активы, обязательства и процентный доход Bank of America (BAC) из последнего отчета 10-Q
+2025-03-23 22:45:48,792 - run_agent - INFO - Сканирование директории с инструментами: /Users/zilber/Desktop/repo/ai_agent_finance/tools
+2025-03-23 22:45:49,053 - run_agent - INFO - Импортирован модуль: tools.registry
+2025-03-23 22:45:49,063 - pdf_analyzer - INFO - Using PyPDF2 for PDF extraction
+2025-03-23 22:45:49,064 - tools_registry - INFO - Инструмент зарегистрирован: extract_text_from_pdf
+2025-03-23 22:45:49,064 - tools_registry - INFO - Инструмент зарегистрирован: find_financial_tables
+2025-03-23 22:45:49,065 - tools_registry - INFO - Инструмент зарегистрирован: extract_key_metrics
+2025-03-23 22:45:49,065 - tools_registry - INFO - Инструмент зарегистрирован: analyze_financial_report
+2025-03-23 22:45:49,066 - tools_registry - INFO - Инструмент зарегистрирован: extract_specific_section
+2025-03-23 22:45:49,066 - tools_registry - INFO - Инструмент зарегистрирован: extract_related_keywords
+2025-03-23 22:45:49,066 - tools_registry - INFO - Инструмент зарегистрирован: summarize_report
+2025-03-23 22:45:49,067 - tools_registry - INFO - Инструмент зарегистрирован: get_and_analyze_latest_report
+2025-03-23 22:45:49,067 - run_agent - INFO - Импортирован модуль: tools.pdf_analyzer
+2025-03-23 22:45:49,068 - trade_tracker - INFO - База данных сделок инициализирована
+2025-03-23 22:45:49,070 - tools_registry - INFO - Инструмент зарегистрирован: add_trade
+2025-03-23 22:45:49,070 - tools_registry - INFO - Инструмент зарегистрирован: close_trade
+2025-03-23 22:45:49,071 - tools_registry - INFO - Инструмент зарегистрирован: get_trade
+2025-03-23 22:45:49,072 - tools_registry - INFO - Инструмент зарегистрирован: list_trades
+2025-03-23 22:45:49,073 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_statistics
+2025-03-23 22:45:49,073 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_form_questions
+2025-03-23 22:45:49,073 - tools_registry - INFO - Инструмент зарегистрирован: get_close_trade_form_questions
+2025-03-23 22:45:49,073 - run_agent - INFO - Импортирован модуль: tools.trade_tracker
+2025-03-23 22:45:49,092 - tools_registry - INFO - Инструмент зарегистрирован: search_filings
+2025-03-23 22:45:49,092 - tools_registry - INFO - Инструмент зарегистрирован: download_filing_as_pdf
+2025-03-23 22:45:49,093 - tools_registry - INFO - Инструмент зарегистрирован: get_recent_filing
+2025-03-23 22:45:49,093 - tools_registry - INFO - Инструмент зарегистрирован: download_recent_filing_as_pdf
+2025-03-23 22:45:49,094 - tools_registry - INFO - Инструмент зарегистрирован: search_filings_by_period
+2025-03-23 22:45:49,095 - tools_registry - INFO - Инструмент зарегистрирован: format_filing_summary
+2025-03-23 22:45:49,095 - tools_registry - INFO - Инструмент зарегистрирован: get_filing_list_summary
+2025-03-23 22:45:49,096 - tools_registry - INFO - Инструмент зарегистрирован: get_company_quarterly_report
+2025-03-23 22:45:49,096 - tools_registry - INFO - Инструмент зарегистрирован: get_company_annual_report
+2025-03-23 22:45:49,097 - tools_registry - INFO - Инструмент зарегистрирован: get_company_recent_filings
+2025-03-23 22:45:49,097 - tools_registry - INFO - Инструмент зарегистрирован: download_specific_filing
+2025-03-23 22:45:49,097 - run_agent - INFO - Импортирован модуль: tools.sec_downloader
+2025-03-23 22:45:49,097 - run_agent - INFO - Импортировано модулей с инструментами: 4
+2025-03-23 22:45:49,098 - run_agent - INFO - Инициализация инвестиционного агента
+2025-03-23 22:45:49,098 - investment_agent - INFO - Initializing agent with 26 tools
+2025-03-23 22:45:49,098 - investment_agent - INFO - Investment Agent initialized successfully with 26 tools
+2025-03-23 22:45:49,098 - run_agent - INFO - Обработка запроса инвестиционным агентом
+2025-03-23 22:45:51,793 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-23 22:45:51,925 - sec_downloader - INFO - Поиск отчетов для BAC
+2025-03-23 22:45:53,133 - sec_downloader - INFO - Найдено 1 отчетов для BAC
+2025-03-23 22:45:53,134 - sec_downloader - INFO - Скачивание документа в PDF: BAC_10-Q_2024-10-29.pdf
+2025-03-23 22:45:55,783 - sec_downloader - INFO - Документ успешно скачан: downloaded_filings/BAC_10-Q_2024-10-29.pdf
+2025-03-23 22:45:55,784 - pdf_analyzer - INFO - Начинаем извлечение текста из downloaded_filings/BAC_10-Q_2024-10-29.pdf
+2025-03-23 22:46:08,370 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-23 22:46:08,495 - pdf_analyzer - INFO - Начинаем извлечение текста из downloaded_filings/BAC_10-Q_2024-10-29.pdf
+2025-03-23 22:46:11,778 - pdf_analyzer - INFO - Начинаем извлечение текста из downloaded_filings/BAC_10-Q_2024-10-29.pdf
+2025-03-23 22:46:15,067 - pdf_analyzer - INFO - Начинаем извлечение текста из downloaded_filings/BAC_10-Q_2024-10-29.pdf
+2025-03-23 22:46:22,554 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-23 22:46:22,696 - run_agent - INFO - Получен ответ от агента (первые 200 символов): Вот информация из последнего отчета 10-Q Bank of America (BAC):
+
+### Активы
+- **Общие активы**: $3,324,293 млн
+- **Увеличение активов**: $144.1 млрд с 31 декабря 2023 года, в основном за счет увеличен
+2025-03-23 22:46:22,696 - run_agent - INFO - Запрос успешно обработан
+2025-03-23 22:48:31,263 - run_agent - INFO - Получен запрос: отчет по TSLA
+2025-03-23 22:48:31,263 - run_agent - INFO - Сканирование директории с инструментами: /Users/zilber/Desktop/repo/ai_agent_finance/tools
+2025-03-23 22:48:31,520 - run_agent - INFO - Импортирован модуль: tools.registry
+2025-03-23 22:48:31,530 - pdf_analyzer - INFO - Using PyPDF2 for PDF extraction
+2025-03-23 22:48:31,531 - tools_registry - INFO - Инструмент зарегистрирован: extract_text_from_pdf
+2025-03-23 22:48:31,531 - tools_registry - INFO - Инструмент зарегистрирован: find_financial_tables
+2025-03-23 22:48:31,532 - tools_registry - INFO - Инструмент зарегистрирован: extract_key_metrics
+2025-03-23 22:48:31,532 - tools_registry - INFO - Инструмент зарегистрирован: analyze_financial_report
+2025-03-23 22:48:31,533 - tools_registry - INFO - Инструмент зарегистрирован: extract_specific_section
+2025-03-23 22:48:31,533 - tools_registry - INFO - Инструмент зарегистрирован: extract_related_keywords
+2025-03-23 22:48:31,533 - tools_registry - INFO - Инструмент зарегистрирован: summarize_report
+2025-03-23 22:48:31,534 - tools_registry - INFO - Инструмент зарегистрирован: get_and_analyze_latest_report
+2025-03-23 22:48:31,534 - run_agent - INFO - Импортирован модуль: tools.pdf_analyzer
+2025-03-23 22:48:31,535 - trade_tracker - INFO - База данных сделок инициализирована
+2025-03-23 22:48:31,537 - tools_registry - INFO - Инструмент зарегистрирован: add_trade
+2025-03-23 22:48:31,537 - tools_registry - INFO - Инструмент зарегистрирован: close_trade
+2025-03-23 22:48:31,538 - tools_registry - INFO - Инструмент зарегистрирован: get_trade
+2025-03-23 22:48:31,539 - tools_registry - INFO - Инструмент зарегистрирован: list_trades
+2025-03-23 22:48:31,540 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_statistics
+2025-03-23 22:48:31,540 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_form_questions
+2025-03-23 22:48:31,540 - tools_registry - INFO - Инструмент зарегистрирован: get_close_trade_form_questions
+2025-03-23 22:48:31,540 - run_agent - INFO - Импортирован модуль: tools.trade_tracker
+2025-03-23 22:48:31,558 - tools_registry - INFO - Инструмент зарегистрирован: search_filings
+2025-03-23 22:48:31,559 - tools_registry - INFO - Инструмент зарегистрирован: download_filing_as_pdf
+2025-03-23 22:48:31,559 - tools_registry - INFO - Инструмент зарегистрирован: get_recent_filing
+2025-03-23 22:48:31,560 - tools_registry - INFO - Инструмент зарегистрирован: download_recent_filing_as_pdf
+2025-03-23 22:48:31,561 - tools_registry - INFO - Инструмент зарегистрирован: search_filings_by_period
+2025-03-23 22:48:31,561 - tools_registry - INFO - Инструмент зарегистрирован: format_filing_summary
+2025-03-23 22:48:31,561 - tools_registry - INFO - Инструмент зарегистрирован: get_filing_list_summary
+2025-03-23 22:48:31,562 - tools_registry - INFO - Инструмент зарегистрирован: get_company_quarterly_report
+2025-03-23 22:48:31,562 - tools_registry - INFO - Инструмент зарегистрирован: get_company_annual_report
+2025-03-23 22:48:31,563 - tools_registry - INFO - Инструмент зарегистрирован: get_company_recent_filings
+2025-03-23 22:48:31,563 - tools_registry - INFO - Инструмент зарегистрирован: download_specific_filing
+2025-03-23 22:48:31,563 - run_agent - INFO - Импортирован модуль: tools.sec_downloader
+2025-03-23 22:48:31,563 - run_agent - INFO - Импортировано модулей с инструментами: 4
+2025-03-23 22:48:31,564 - run_agent - INFO - Инициализация инвестиционного агента
+2025-03-23 22:48:31,564 - investment_agent - INFO - Initializing agent with 26 tools
+2025-03-23 22:48:31,564 - investment_agent - INFO - Investment Agent initialized successfully with 26 tools
+2025-03-23 22:48:31,564 - run_agent - INFO - Обработка запроса инвестиционным агентом
+2025-03-23 22:48:34,358 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-23 22:48:34,528 - run_agent - INFO - Получен ответ от агента (первые 200 символов): Какой тип отчета вас интересует для Tesla (TSLA)? Вы можете выбрать из следующих вариантов:
+
+1. Годовой отчет (10-K)
+2. Квартальный отчет (10-Q)
+
+Пожалуйста, уточните, какой отчет вы хотите получить, 
+2025-03-23 22:48:34,528 - run_agent - INFO - Запрос успешно обработан
+2025-03-23 22:48:48,243 - run_agent - INFO - Получен запрос: Получить последний квартальный отчет (10-Q) для Tesla (TSLA)
+2025-03-23 22:48:48,243 - run_agent - INFO - Сканирование директории с инструментами: /Users/zilber/Desktop/repo/ai_agent_finance/tools
+2025-03-23 22:48:48,496 - run_agent - INFO - Импортирован модуль: tools.registry
+2025-03-23 22:48:48,506 - pdf_analyzer - INFO - Using PyPDF2 for PDF extraction
+2025-03-23 22:48:48,507 - tools_registry - INFO - Инструмент зарегистрирован: extract_text_from_pdf
+2025-03-23 22:48:48,507 - tools_registry - INFO - Инструмент зарегистрирован: find_financial_tables
+2025-03-23 22:48:48,508 - tools_registry - INFO - Инструмент зарегистрирован: extract_key_metrics
+2025-03-23 22:48:48,508 - tools_registry - INFO - Инструмент зарегистрирован: analyze_financial_report
+2025-03-23 22:48:48,509 - tools_registry - INFO - Инструмент зарегистрирован: extract_specific_section
+2025-03-23 22:48:48,509 - tools_registry - INFO - Инструмент зарегистрирован: extract_related_keywords
+2025-03-23 22:48:48,509 - tools_registry - INFO - Инструмент зарегистрирован: summarize_report
+2025-03-23 22:48:48,510 - tools_registry - INFO - Инструмент зарегистрирован: get_and_analyze_latest_report
+2025-03-23 22:48:48,510 - run_agent - INFO - Импортирован модуль: tools.pdf_analyzer
+2025-03-23 22:48:48,511 - trade_tracker - INFO - База данных сделок инициализирована
+2025-03-23 22:48:48,513 - tools_registry - INFO - Инструмент зарегистрирован: add_trade
+2025-03-23 22:48:48,513 - tools_registry - INFO - Инструмент зарегистрирован: close_trade
+2025-03-23 22:48:48,514 - tools_registry - INFO - Инструмент зарегистрирован: get_trade
+2025-03-23 22:48:48,515 - tools_registry - INFO - Инструмент зарегистрирован: list_trades
+2025-03-23 22:48:48,516 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_statistics
+2025-03-23 22:48:48,516 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_form_questions
+2025-03-23 22:48:48,516 - tools_registry - INFO - Инструмент зарегистрирован: get_close_trade_form_questions
+2025-03-23 22:48:48,516 - run_agent - INFO - Импортирован модуль: tools.trade_tracker
+2025-03-23 22:48:48,534 - tools_registry - INFO - Инструмент зарегистрирован: search_filings
+2025-03-23 22:48:48,535 - tools_registry - INFO - Инструмент зарегистрирован: download_filing_as_pdf
+2025-03-23 22:48:48,536 - tools_registry - INFO - Инструмент зарегистрирован: get_recent_filing
+2025-03-23 22:48:48,536 - tools_registry - INFO - Инструмент зарегистрирован: download_recent_filing_as_pdf
+2025-03-23 22:48:48,537 - tools_registry - INFO - Инструмент зарегистрирован: search_filings_by_period
+2025-03-23 22:48:48,537 - tools_registry - INFO - Инструмент зарегистрирован: format_filing_summary
+2025-03-23 22:48:48,538 - tools_registry - INFO - Инструмент зарегистрирован: get_filing_list_summary
+2025-03-23 22:48:48,538 - tools_registry - INFO - Инструмент зарегистрирован: get_company_quarterly_report
+2025-03-23 22:48:48,539 - tools_registry - INFO - Инструмент зарегистрирован: get_company_annual_report
+2025-03-23 22:48:48,540 - tools_registry - INFO - Инструмент зарегистрирован: get_company_recent_filings
+2025-03-23 22:48:48,540 - tools_registry - INFO - Инструмент зарегистрирован: download_specific_filing
+2025-03-23 22:48:48,540 - run_agent - INFO - Импортирован модуль: tools.sec_downloader
+2025-03-23 22:48:48,540 - run_agent - INFO - Импортировано модулей с инструментами: 4
+2025-03-23 22:48:48,540 - run_agent - INFO - Инициализация инвестиционного агента
+2025-03-23 22:48:48,540 - investment_agent - INFO - Initializing agent with 26 tools
+2025-03-23 22:48:48,540 - investment_agent - INFO - Investment Agent initialized successfully with 26 tools
+2025-03-23 22:48:48,540 - run_agent - INFO - Обработка запроса инвестиционным агентом
+2025-03-23 22:48:54,575 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-23 22:48:54,737 - sec_downloader - INFO - Поиск отчетов для TSLA
+2025-03-23 22:48:56,183 - sec_downloader - INFO - Найдено 1 отчетов для TSLA
+2025-03-23 22:48:56,184 - sec_downloader - INFO - Скачивание документа в PDF: TSLA_10-Q_2024-10-23.pdf
+2025-03-23 22:48:57,270 - sec_downloader - WARNING - Rate limited. Waiting for 1.53 seconds before retry.
+2025-03-23 22:48:59,813 - sec_downloader - WARNING - Rate limited. Waiting for 2.80 seconds before retry.
+2025-03-23 22:49:03,761 - sec_downloader - WARNING - Rate limited. Waiting for 4.91 seconds before retry.
+2025-03-23 22:49:08,681 - sec_downloader - ERROR - Ошибка при скачивании документа: Failed after 3 retries
+2025-03-23 22:49:15,708 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-23 22:49:15,836 - run_agent - INFO - Получен ответ от агента (первые 200 символов): Не удалось скачать последний квартальный отчет (10-Q) для Tesla (TSLA) из-за ошибки при загрузке. Могу попробовать снова или помочь с чем-то другим.
+2025-03-23 22:49:15,836 - run_agent - INFO - Запрос успешно обработан
+2025-03-23 22:51:48,922 - run_agent - INFO - Получен запрос: отчет по TSLA
+2025-03-23 22:51:48,922 - run_agent - INFO - Сканирование директории с инструментами: /Users/zilber/Desktop/repo/ai_agent_finance/tools
+2025-03-23 22:51:49,178 - run_agent - INFO - Импортирован модуль: tools.registry
+2025-03-23 22:51:49,188 - pdf_analyzer - INFO - Using PyPDF2 for PDF extraction
+2025-03-23 22:51:49,189 - tools_registry - INFO - Инструмент зарегистрирован: extract_text_from_pdf
+2025-03-23 22:51:49,189 - tools_registry - INFO - Инструмент зарегистрирован: find_financial_tables
+2025-03-23 22:51:49,190 - tools_registry - INFO - Инструмент зарегистрирован: extract_key_metrics
+2025-03-23 22:51:49,190 - tools_registry - INFO - Инструмент зарегистрирован: analyze_financial_report
+2025-03-23 22:51:49,190 - tools_registry - INFO - Инструмент зарегистрирован: extract_specific_section
+2025-03-23 22:51:49,191 - tools_registry - INFO - Инструмент зарегистрирован: extract_related_keywords
+2025-03-23 22:51:49,191 - tools_registry - INFO - Инструмент зарегистрирован: summarize_report
+2025-03-23 22:51:49,191 - tools_registry - INFO - Инструмент зарегистрирован: get_and_analyze_latest_report
+2025-03-23 22:51:49,191 - run_agent - INFO - Импортирован модуль: tools.pdf_analyzer
+2025-03-23 22:51:49,193 - trade_tracker - INFO - База данных сделок инициализирована
+2025-03-23 22:51:49,194 - tools_registry - INFO - Инструмент зарегистрирован: add_trade
+2025-03-23 22:51:49,195 - tools_registry - INFO - Инструмент зарегистрирован: close_trade
+2025-03-23 22:51:49,195 - tools_registry - INFO - Инструмент зарегистрирован: get_trade
+2025-03-23 22:51:49,197 - tools_registry - INFO - Инструмент зарегистрирован: list_trades
+2025-03-23 22:51:49,197 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_statistics
+2025-03-23 22:51:49,197 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_form_questions
+2025-03-23 22:51:49,198 - tools_registry - INFO - Инструмент зарегистрирован: get_close_trade_form_questions
+2025-03-23 22:51:49,198 - run_agent - INFO - Импортирован модуль: tools.trade_tracker
+2025-03-23 22:51:49,216 - tools_registry - INFO - Инструмент зарегистрирован: search_filings
+2025-03-23 22:51:49,216 - tools_registry - INFO - Инструмент зарегистрирован: download_filing_as_pdf
+2025-03-23 22:51:49,217 - tools_registry - INFO - Инструмент зарегистрирован: get_recent_filing
+2025-03-23 22:51:49,217 - tools_registry - INFO - Инструмент зарегистрирован: download_recent_filing_as_pdf
+2025-03-23 22:51:49,218 - tools_registry - INFO - Инструмент зарегистрирован: search_filings_by_period
+2025-03-23 22:51:49,219 - tools_registry - INFO - Инструмент зарегистрирован: format_filing_summary
+2025-03-23 22:51:49,219 - tools_registry - INFO - Инструмент зарегистрирован: get_filing_list_summary
+2025-03-23 22:51:49,220 - tools_registry - INFO - Инструмент зарегистрирован: get_company_quarterly_report
+2025-03-23 22:51:49,220 - tools_registry - INFO - Инструмент зарегистрирован: get_company_annual_report
+2025-03-23 22:51:49,221 - tools_registry - INFO - Инструмент зарегистрирован: get_company_recent_filings
+2025-03-23 22:51:49,221 - tools_registry - INFO - Инструмент зарегистрирован: download_specific_filing
+2025-03-23 22:51:49,221 - run_agent - INFO - Импортирован модуль: tools.sec_downloader
+2025-03-23 22:51:49,221 - run_agent - INFO - Импортировано модулей с инструментами: 4
+2025-03-23 22:51:49,222 - run_agent - INFO - Инициализация инвестиционного агента
+2025-03-23 22:51:49,222 - investment_agent - INFO - Initializing agent with 26 tools
+2025-03-23 22:51:49,222 - investment_agent - INFO - Investment Agent initialized successfully with 26 tools
+2025-03-23 22:51:49,222 - run_agent - INFO - Обработка запроса инвестиционным агентом
+2025-03-23 22:51:50,937 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-23 22:51:51,122 - run_agent - INFO - Получен ответ от агента (первые 200 символов): Какой тип отчета вас интересует: годовой (10-K) или квартальный (10-Q)?
+2025-03-23 22:51:51,122 - run_agent - INFO - Запрос успешно обработан
+2025-03-23 22:51:58,960 - run_agent - INFO - Получен запрос: Отчет 10-Q по TSLA
+2025-03-23 22:51:58,961 - run_agent - INFO - Сканирование директории с инструментами: /Users/zilber/Desktop/repo/ai_agent_finance/tools
+2025-03-23 22:51:59,224 - run_agent - INFO - Импортирован модуль: tools.registry
+2025-03-23 22:51:59,234 - pdf_analyzer - INFO - Using PyPDF2 for PDF extraction
+2025-03-23 22:51:59,236 - tools_registry - INFO - Инструмент зарегистрирован: extract_text_from_pdf
+2025-03-23 22:51:59,236 - tools_registry - INFO - Инструмент зарегистрирован: find_financial_tables
+2025-03-23 22:51:59,236 - tools_registry - INFO - Инструмент зарегистрирован: extract_key_metrics
+2025-03-23 22:51:59,237 - tools_registry - INFO - Инструмент зарегистрирован: analyze_financial_report
+2025-03-23 22:51:59,237 - tools_registry - INFO - Инструмент зарегистрирован: extract_specific_section
+2025-03-23 22:51:59,237 - tools_registry - INFO - Инструмент зарегистрирован: extract_related_keywords
+2025-03-23 22:51:59,238 - tools_registry - INFO - Инструмент зарегистрирован: summarize_report
+2025-03-23 22:51:59,238 - tools_registry - INFO - Инструмент зарегистрирован: get_and_analyze_latest_report
+2025-03-23 22:51:59,238 - run_agent - INFO - Импортирован модуль: tools.pdf_analyzer
+2025-03-23 22:51:59,240 - trade_tracker - INFO - База данных сделок инициализирована
+2025-03-23 22:51:59,241 - tools_registry - INFO - Инструмент зарегистрирован: add_trade
+2025-03-23 22:51:59,242 - tools_registry - INFO - Инструмент зарегистрирован: close_trade
+2025-03-23 22:51:59,242 - tools_registry - INFO - Инструмент зарегистрирован: get_trade
+2025-03-23 22:51:59,244 - tools_registry - INFO - Инструмент зарегистрирован: list_trades
+2025-03-23 22:51:59,244 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_statistics
+2025-03-23 22:51:59,245 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_form_questions
+2025-03-23 22:51:59,245 - tools_registry - INFO - Инструмент зарегистрирован: get_close_trade_form_questions
+2025-03-23 22:51:59,245 - run_agent - INFO - Импортирован модуль: tools.trade_tracker
+2025-03-23 22:51:59,264 - tools_registry - INFO - Инструмент зарегистрирован: search_filings
+2025-03-23 22:51:59,264 - tools_registry - INFO - Инструмент зарегистрирован: download_filing_as_pdf
+2025-03-23 22:51:59,265 - tools_registry - INFO - Инструмент зарегистрирован: get_recent_filing
+2025-03-23 22:51:59,265 - tools_registry - INFO - Инструмент зарегистрирован: download_recent_filing_as_pdf
+2025-03-23 22:51:59,266 - tools_registry - INFO - Инструмент зарегистрирован: search_filings_by_period
+2025-03-23 22:51:59,267 - tools_registry - INFO - Инструмент зарегистрирован: format_filing_summary
+2025-03-23 22:51:59,267 - tools_registry - INFO - Инструмент зарегистрирован: get_filing_list_summary
+2025-03-23 22:51:59,267 - tools_registry - INFO - Инструмент зарегистрирован: get_company_quarterly_report
+2025-03-23 22:51:59,268 - tools_registry - INFO - Инструмент зарегистрирован: get_company_annual_report
+2025-03-23 22:51:59,269 - tools_registry - INFO - Инструмент зарегистрирован: get_company_recent_filings
+2025-03-23 22:51:59,269 - tools_registry - INFO - Инструмент зарегистрирован: download_specific_filing
+2025-03-23 22:51:59,269 - run_agent - INFO - Импортирован модуль: tools.sec_downloader
+2025-03-23 22:51:59,269 - run_agent - INFO - Импортировано модулей с инструментами: 4
+2025-03-23 22:51:59,269 - run_agent - INFO - Инициализация инвестиционного агента
+2025-03-23 22:51:59,270 - investment_agent - INFO - Initializing agent with 26 tools
+2025-03-23 22:51:59,270 - investment_agent - INFO - Investment Agent initialized successfully with 26 tools
+2025-03-23 22:51:59,270 - run_agent - INFO - Обработка запроса инвестиционным агентом
+2025-03-23 22:52:01,307 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-23 22:52:01,467 - sec_downloader - INFO - Поиск отчетов для TSLA
+2025-03-23 22:52:02,500 - sec_downloader - WARNING - Rate limited. Waiting for 1.70 seconds before retry.
+2025-03-23 22:52:04,979 - sec_downloader - WARNING - Rate limited. Waiting for 2.05 seconds before retry.
+2025-03-23 22:52:11,604 - sec_downloader - WARNING - Rate limited. Waiting for 4.64 seconds before retry.
+2025-03-23 22:52:16,253 - sec_downloader - ERROR - Ошибка при поиске отчетов для TSLA: Failed after 3 retries
+2025-03-23 22:52:18,326 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-23 22:52:18,433 - sec_downloader - INFO - Поиск отчетов для TSLA
+2025-03-23 22:52:19,291 - sec_downloader - WARNING - Rate limited. Waiting for 1.17 seconds before retry.
+2025-03-23 22:52:21,250 - sec_downloader - WARNING - Rate limited. Waiting for 3.00 seconds before retry.
+2025-03-23 22:52:25,053 - sec_downloader - WARNING - Rate limited. Waiting for 4.29 seconds before retry.
+2025-03-23 22:52:29,352 - sec_downloader - ERROR - Ошибка при поиске отчетов для TSLA: Failed after 3 retries
+2025-03-23 22:52:31,743 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-23 22:52:31,902 - run_agent - INFO - Получен ответ от агента (первые 200 символов): К сожалению, возникла ошибка при попытке получить последний квартальный отчет (10-Q) для Tesla (TSLA). 
+
+Вы можете попробовать позже или, если хотите, я могу помочь с поиском других отчетов или информ
+2025-03-23 22:52:31,903 - run_agent - INFO - Запрос успешно обработан
+2025-03-23 22:54:03,325 - run_agent - INFO - Получен запрос: получить квартальный отчет (10-Q) для WMT
+2025-03-23 22:54:03,325 - run_agent - INFO - Сканирование директории с инструментами: /Users/zilber/Desktop/repo/ai_agent_finance/tools
+2025-03-23 22:54:03,582 - run_agent - INFO - Импортирован модуль: tools.registry
+2025-03-23 22:54:03,592 - pdf_analyzer - INFO - Using PyPDF2 for PDF extraction
+2025-03-23 22:54:03,593 - tools_registry - INFO - Инструмент зарегистрирован: extract_text_from_pdf
+2025-03-23 22:54:03,594 - tools_registry - INFO - Инструмент зарегистрирован: find_financial_tables
+2025-03-23 22:54:03,594 - tools_registry - INFO - Инструмент зарегистрирован: extract_key_metrics
+2025-03-23 22:54:03,594 - tools_registry - INFO - Инструмент зарегистрирован: analyze_financial_report
+2025-03-23 22:54:03,595 - tools_registry - INFO - Инструмент зарегистрирован: extract_specific_section
+2025-03-23 22:54:03,595 - tools_registry - INFO - Инструмент зарегистрирован: extract_related_keywords
+2025-03-23 22:54:03,595 - tools_registry - INFO - Инструмент зарегистрирован: summarize_report
+2025-03-23 22:54:03,596 - tools_registry - INFO - Инструмент зарегистрирован: get_and_analyze_latest_report
+2025-03-23 22:54:03,596 - run_agent - INFO - Импортирован модуль: tools.pdf_analyzer
+2025-03-23 22:54:03,597 - trade_tracker - INFO - База данных сделок инициализирована
+2025-03-23 22:54:03,599 - tools_registry - INFO - Инструмент зарегистрирован: add_trade
+2025-03-23 22:54:03,599 - tools_registry - INFO - Инструмент зарегистрирован: close_trade
+2025-03-23 22:54:03,600 - tools_registry - INFO - Инструмент зарегистрирован: get_trade
+2025-03-23 22:54:03,601 - tools_registry - INFO - Инструмент зарегистрирован: list_trades
+2025-03-23 22:54:03,602 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_statistics
+2025-03-23 22:54:03,602 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_form_questions
+2025-03-23 22:54:03,602 - tools_registry - INFO - Инструмент зарегистрирован: get_close_trade_form_questions
+2025-03-23 22:54:03,602 - run_agent - INFO - Импортирован модуль: tools.trade_tracker
+2025-03-23 22:54:03,621 - tools_registry - INFO - Инструмент зарегистрирован: search_filings
+2025-03-23 22:54:03,621 - tools_registry - INFO - Инструмент зарегистрирован: download_filing_as_pdf
+2025-03-23 22:54:03,622 - tools_registry - INFO - Инструмент зарегистрирован: get_recent_filing
+2025-03-23 22:54:03,622 - tools_registry - INFO - Инструмент зарегистрирован: download_recent_filing_as_pdf
+2025-03-23 22:54:03,623 - tools_registry - INFO - Инструмент зарегистрирован: search_filings_by_period
+2025-03-23 22:54:03,624 - tools_registry - INFO - Инструмент зарегистрирован: format_filing_summary
+2025-03-23 22:54:03,624 - tools_registry - INFO - Инструмент зарегистрирован: get_filing_list_summary
+2025-03-23 22:54:03,625 - tools_registry - INFO - Инструмент зарегистрирован: get_company_quarterly_report
+2025-03-23 22:54:03,625 - tools_registry - INFO - Инструмент зарегистрирован: get_company_annual_report
+2025-03-23 22:54:03,626 - tools_registry - INFO - Инструмент зарегистрирован: get_company_recent_filings
+2025-03-23 22:54:03,626 - tools_registry - INFO - Инструмент зарегистрирован: download_specific_filing
+2025-03-23 22:54:03,626 - run_agent - INFO - Импортирован модуль: tools.sec_downloader
+2025-03-23 22:54:03,626 - run_agent - INFO - Импортировано модулей с инструментами: 4
+2025-03-23 22:54:03,627 - run_agent - INFO - Инициализация инвестиционного агента
+2025-03-23 22:54:03,627 - investment_agent - INFO - Initializing agent with 26 tools
+2025-03-23 22:54:03,627 - investment_agent - INFO - Investment Agent initialized successfully with 26 tools
+2025-03-23 22:54:03,627 - run_agent - INFO - Обработка запроса инвестиционным агентом
+2025-03-23 22:54:05,836 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-23 22:54:05,877 - sec_downloader - INFO - Поиск отчетов для WMT
+2025-03-23 22:54:06,829 - sec_downloader - WARNING - Rate limited. Waiting for 1.78 seconds before retry.
+2025-03-23 22:54:09,410 - sec_downloader - WARNING - Rate limited. Waiting for 2.98 seconds before retry.
+2025-03-23 22:54:13,210 - sec_downloader - WARNING - Rate limited. Waiting for 4.13 seconds before retry.
+2025-03-23 22:54:17,347 - sec_downloader - ERROR - Ошибка при поиске отчетов для WMT: Failed after 3 retries
+2025-03-23 22:54:19,844 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-23 22:54:19,938 - run_agent - INFO - Получен ответ от агента (первые 200 символов): К сожалению, возникла ошибка при попытке получить квартальный отчет (10-Q) для компании Walmart (WMT). Возможно, проблема связана с временными техническими трудностями.
+
+Вы можете попробовать снова по
+2025-03-23 22:54:19,938 - run_agent - INFO - Запрос успешно обработан
+2025-03-23 22:58:36,742 - run_agent - INFO - Получен запрос: все сделки с инструментом TQQQ
+2025-03-23 22:58:36,742 - run_agent - INFO - Сканирование директории с инструментами: /Users/zilber/Desktop/repo/ai_agent_finance/tools
+2025-03-23 22:58:37,004 - run_agent - INFO - Импортирован модуль: tools.registry
+2025-03-23 22:58:37,014 - pdf_analyzer - INFO - Using PyPDF2 for PDF extraction
+2025-03-23 22:58:37,015 - tools_registry - INFO - Инструмент зарегистрирован: extract_text_from_pdf
+2025-03-23 22:58:37,015 - tools_registry - INFO - Инструмент зарегистрирован: find_financial_tables
+2025-03-23 22:58:37,016 - tools_registry - INFO - Инструмент зарегистрирован: extract_key_metrics
+2025-03-23 22:58:37,016 - tools_registry - INFO - Инструмент зарегистрирован: analyze_financial_report
+2025-03-23 22:58:37,016 - tools_registry - INFO - Инструмент зарегистрирован: extract_specific_section
+2025-03-23 22:58:37,017 - tools_registry - INFO - Инструмент зарегистрирован: extract_related_keywords
+2025-03-23 22:58:37,017 - tools_registry - INFO - Инструмент зарегистрирован: summarize_report
+2025-03-23 22:58:37,018 - tools_registry - INFO - Инструмент зарегистрирован: get_and_analyze_latest_report
+2025-03-23 22:58:37,018 - run_agent - INFO - Импортирован модуль: tools.pdf_analyzer
+2025-03-23 22:58:37,019 - trade_tracker - INFO - База данных сделок инициализирована
+2025-03-23 22:58:37,020 - tools_registry - INFO - Инструмент зарегистрирован: add_trade
+2025-03-23 22:58:37,021 - tools_registry - INFO - Инструмент зарегистрирован: close_trade
+2025-03-23 22:58:37,022 - tools_registry - INFO - Инструмент зарегистрирован: get_trade
+2025-03-23 22:58:37,023 - tools_registry - INFO - Инструмент зарегистрирован: list_trades
+2025-03-23 22:58:37,024 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_statistics
+2025-03-23 22:58:37,024 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_form_questions
+2025-03-23 22:58:37,024 - tools_registry - INFO - Инструмент зарегистрирован: get_close_trade_form_questions
+2025-03-23 22:58:37,024 - run_agent - INFO - Импортирован модуль: tools.trade_tracker
+2025-03-23 22:58:37,042 - tools_registry - INFO - Инструмент зарегистрирован: search_filings
+2025-03-23 22:58:37,043 - tools_registry - INFO - Инструмент зарегистрирован: download_filing_as_pdf
+2025-03-23 22:58:37,043 - tools_registry - INFO - Инструмент зарегистрирован: get_recent_filing
+2025-03-23 22:58:37,044 - tools_registry - INFO - Инструмент зарегистрирован: download_recent_filing_as_pdf
+2025-03-23 22:58:37,045 - tools_registry - INFO - Инструмент зарегистрирован: search_filings_by_period
+2025-03-23 22:58:37,045 - tools_registry - INFO - Инструмент зарегистрирован: format_filing_summary
+2025-03-23 22:58:37,046 - tools_registry - INFO - Инструмент зарегистрирован: get_filing_list_summary
+2025-03-23 22:58:37,046 - tools_registry - INFO - Инструмент зарегистрирован: get_company_quarterly_report
+2025-03-23 22:58:37,047 - tools_registry - INFO - Инструмент зарегистрирован: get_company_annual_report
+2025-03-23 22:58:37,047 - tools_registry - INFO - Инструмент зарегистрирован: get_company_recent_filings
+2025-03-23 22:58:37,048 - tools_registry - INFO - Инструмент зарегистрирован: download_specific_filing
+2025-03-23 22:58:37,048 - run_agent - INFO - Импортирован модуль: tools.sec_downloader
+2025-03-23 22:58:37,048 - run_agent - INFO - Импортировано модулей с инструментами: 4
+2025-03-23 22:58:37,048 - run_agent - INFO - Инициализация инвестиционного агента
+2025-03-23 22:58:37,048 - investment_agent - INFO - Initializing agent with 26 tools
+2025-03-23 22:58:37,048 - investment_agent - INFO - Investment Agent initialized successfully with 26 tools
+2025-03-23 22:58:37,048 - run_agent - INFO - Обработка запроса инвестиционным агентом
+2025-03-23 22:58:38,668 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-23 22:58:41,020 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-23 22:58:41,167 - run_agent - INFO - Получен ответ от агента (первые 200 символов): Вот информация о текущей открытой сделке с инструментом TQQQ:
+
+- **Стратегия:** Leveraged ETF
+- **Тип сделки:** ETFs
+- **Инструмент:** TQQQ
+- **Тип позиции:** Long
+- **Количество:** 7240
+- **Дата откр
+2025-03-23 22:58:41,168 - run_agent - INFO - Запрос успешно обработан
+2025-03-24 12:36:40,012 - run_agent - INFO - Получен запрос: Закрыть обе позиции по ES500 24 марта 2025 по цене 5742
+2025-03-24 12:36:40,012 - run_agent - INFO - Сканирование директории с инструментами: /Users/zilber/Desktop/repo/ai_agent_finance/tools
+2025-03-24 12:36:40,384 - run_agent - INFO - Импортирован модуль: tools.registry
+2025-03-24 12:36:40,401 - pdf_analyzer - INFO - Using PyPDF2 for PDF extraction
+2025-03-24 12:36:40,402 - tools_registry - INFO - Инструмент зарегистрирован: extract_text_from_pdf
+2025-03-24 12:36:40,402 - tools_registry - INFO - Инструмент зарегистрирован: find_financial_tables
+2025-03-24 12:36:40,403 - tools_registry - INFO - Инструмент зарегистрирован: extract_key_metrics
+2025-03-24 12:36:40,403 - tools_registry - INFO - Инструмент зарегистрирован: analyze_financial_report
+2025-03-24 12:36:40,403 - tools_registry - INFO - Инструмент зарегистрирован: extract_specific_section
+2025-03-24 12:36:40,404 - tools_registry - INFO - Инструмент зарегистрирован: extract_related_keywords
+2025-03-24 12:36:40,404 - tools_registry - INFO - Инструмент зарегистрирован: summarize_report
+2025-03-24 12:36:40,404 - tools_registry - INFO - Инструмент зарегистрирован: get_and_analyze_latest_report
+2025-03-24 12:36:40,404 - run_agent - INFO - Импортирован модуль: tools.pdf_analyzer
+2025-03-24 12:36:40,408 - trade_tracker - INFO - База данных сделок инициализирована
+2025-03-24 12:36:40,409 - tools_registry - INFO - Инструмент зарегистрирован: add_trade
+2025-03-24 12:36:40,410 - tools_registry - INFO - Инструмент зарегистрирован: close_trade
+2025-03-24 12:36:40,410 - tools_registry - INFO - Инструмент зарегистрирован: get_trade
+2025-03-24 12:36:40,412 - tools_registry - INFO - Инструмент зарегистрирован: list_trades
+2025-03-24 12:36:40,412 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_statistics
+2025-03-24 12:36:40,412 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_form_questions
+2025-03-24 12:36:40,413 - tools_registry - INFO - Инструмент зарегистрирован: get_close_trade_form_questions
+2025-03-24 12:36:40,413 - run_agent - INFO - Импортирован модуль: tools.trade_tracker
+2025-03-24 12:36:40,442 - tools_registry - INFO - Инструмент зарегистрирован: search_filings
+2025-03-24 12:36:40,443 - tools_registry - INFO - Инструмент зарегистрирован: download_filing_as_pdf
+2025-03-24 12:36:40,443 - tools_registry - INFO - Инструмент зарегистрирован: get_recent_filing
+2025-03-24 12:36:40,444 - tools_registry - INFO - Инструмент зарегистрирован: download_recent_filing_as_pdf
+2025-03-24 12:36:40,445 - tools_registry - INFO - Инструмент зарегистрирован: search_filings_by_period
+2025-03-24 12:36:40,445 - tools_registry - INFO - Инструмент зарегистрирован: format_filing_summary
+2025-03-24 12:36:40,445 - tools_registry - INFO - Инструмент зарегистрирован: get_filing_list_summary
+2025-03-24 12:36:40,446 - tools_registry - INFO - Инструмент зарегистрирован: get_company_quarterly_report
+2025-03-24 12:36:40,447 - tools_registry - INFO - Инструмент зарегистрирован: get_company_annual_report
+2025-03-24 12:36:40,447 - tools_registry - INFO - Инструмент зарегистрирован: get_company_recent_filings
+2025-03-24 12:36:40,448 - tools_registry - INFO - Инструмент зарегистрирован: download_specific_filing
+2025-03-24 12:36:40,448 - run_agent - INFO - Импортирован модуль: tools.sec_downloader
+2025-03-24 12:36:40,448 - run_agent - INFO - Импортировано модулей с инструментами: 4
+2025-03-24 12:36:40,448 - run_agent - INFO - Инициализация инвестиционного агента
+2025-03-24 12:36:40,448 - investment_agent - INFO - Initializing agent with 26 tools
+2025-03-24 12:36:40,448 - investment_agent - INFO - Investment Agent initialized successfully with 26 tools
+2025-03-24 12:36:40,448 - run_agent - INFO - Обработка запроса инвестиционным агентом
+2025-03-24 12:36:42,616 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-24 12:36:44,383 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-24 12:36:46,283 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-24 12:36:49,916 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-24 12:36:50,026 - run_agent - INFO - Получен ответ от агента (первые 200 символов): Обе позиции по ES500 успешно закрыты 24 марта 2025 года по цене 5742.
+
+### Детали сделок:
+
+1. **Сделка #4**
+   - **Стратегия:** ES Futures
+   - **Тип:** Futures
+   - **Позиция:** Long
+   - **Количеств
+2025-03-24 12:36:50,027 - run_agent - INFO - Запрос успешно обработан
+2025-03-24 16:50:23,028 - run_agent - INFO - Получен запрос: открытые позиции текущий
+2025-03-24 16:50:23,029 - run_agent - INFO - Сканирование директории с инструментами: /Users/zilber/Desktop/repo/ai_agent_finance/tools
+2025-03-24 16:50:23,430 - run_agent - INFO - Импортирован модуль: tools.registry
+2025-03-24 16:50:23,447 - pdf_analyzer - INFO - Using PyPDF2 for PDF extraction
+2025-03-24 16:50:23,449 - tools_registry - INFO - Инструмент зарегистрирован: extract_text_from_pdf
+2025-03-24 16:50:23,450 - tools_registry - INFO - Инструмент зарегистрирован: find_financial_tables
+2025-03-24 16:50:23,450 - tools_registry - INFO - Инструмент зарегистрирован: extract_key_metrics
+2025-03-24 16:50:23,450 - tools_registry - INFO - Инструмент зарегистрирован: analyze_financial_report
+2025-03-24 16:50:23,451 - tools_registry - INFO - Инструмент зарегистрирован: extract_specific_section
+2025-03-24 16:50:23,451 - tools_registry - INFO - Инструмент зарегистрирован: extract_related_keywords
+2025-03-24 16:50:23,451 - tools_registry - INFO - Инструмент зарегистрирован: summarize_report
+2025-03-24 16:50:23,452 - tools_registry - INFO - Инструмент зарегистрирован: get_and_analyze_latest_report
+2025-03-24 16:50:23,452 - run_agent - INFO - Импортирован модуль: tools.pdf_analyzer
+2025-03-24 16:50:23,456 - trade_tracker - INFO - База данных сделок инициализирована
+2025-03-24 16:50:23,457 - tools_registry - INFO - Инструмент зарегистрирован: add_trade
+2025-03-24 16:50:23,458 - tools_registry - INFO - Инструмент зарегистрирован: close_trade
+2025-03-24 16:50:23,458 - tools_registry - INFO - Инструмент зарегистрирован: get_trade
+2025-03-24 16:50:23,460 - tools_registry - INFO - Инструмент зарегистрирован: list_trades
+2025-03-24 16:50:23,460 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_statistics
+2025-03-24 16:50:23,461 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_form_questions
+2025-03-24 16:50:23,461 - tools_registry - INFO - Инструмент зарегистрирован: get_close_trade_form_questions
+2025-03-24 16:50:23,461 - run_agent - INFO - Импортирован модуль: tools.trade_tracker
+2025-03-24 16:50:23,490 - tools_registry - INFO - Инструмент зарегистрирован: search_filings
+2025-03-24 16:50:23,491 - tools_registry - INFO - Инструмент зарегистрирован: download_filing_as_pdf
+2025-03-24 16:50:23,491 - tools_registry - INFO - Инструмент зарегистрирован: get_recent_filing
+2025-03-24 16:50:23,492 - tools_registry - INFO - Инструмент зарегистрирован: download_recent_filing_as_pdf
+2025-03-24 16:50:23,493 - tools_registry - INFO - Инструмент зарегистрирован: search_filings_by_period
+2025-03-24 16:50:23,493 - tools_registry - INFO - Инструмент зарегистрирован: format_filing_summary
+2025-03-24 16:50:23,493 - tools_registry - INFO - Инструмент зарегистрирован: get_filing_list_summary
+2025-03-24 16:50:23,494 - tools_registry - INFO - Инструмент зарегистрирован: get_company_quarterly_report
+2025-03-24 16:50:23,494 - tools_registry - INFO - Инструмент зарегистрирован: get_company_annual_report
+2025-03-24 16:50:23,495 - tools_registry - INFO - Инструмент зарегистрирован: get_company_recent_filings
+2025-03-24 16:50:23,496 - tools_registry - INFO - Инструмент зарегистрирован: download_specific_filing
+2025-03-24 16:50:23,496 - run_agent - INFO - Импортирован модуль: tools.sec_downloader
+2025-03-24 16:50:23,496 - run_agent - INFO - Импортировано модулей с инструментами: 4
+2025-03-24 16:50:23,497 - run_agent - INFO - Инициализация инвестиционного агента
+2025-03-24 16:50:23,497 - investment_agent - INFO - Initializing agent with 26 tools
+2025-03-24 16:50:23,497 - investment_agent - INFO - Investment Agent initialized successfully with 26 tools
+2025-03-24 16:50:23,497 - run_agent - INFO - Обработка запроса инвестиционным агентом
+2025-03-24 16:50:25,284 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-24 16:50:27,963 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-24 16:50:28,067 - run_agent - INFO - Получен ответ от агента (первые 200 символов): У вас есть одна открытая позиция:
+
+- **Инструмент**: TQQQ (Leveraged ETF)
+- **Стратегия**: Leveraged ETF
+- **Тип позиции**: Длинная (long)
+- **Количество**: 7240
+- **Дата открытия**: 3 октября 2023
+- 
+2025-03-24 16:50:28,067 - run_agent - INFO - Запрос успешно обработан
+2025-03-24 16:53:41,711 - run_agent - INFO - Получен запрос: отчетность TSLA
+2025-03-24 16:53:41,711 - run_agent - INFO - Сканирование директории с инструментами: /Users/zilber/Desktop/repo/ai_agent_finance/tools
+2025-03-24 16:53:41,965 - run_agent - INFO - Импортирован модуль: tools.registry
+2025-03-24 16:53:41,983 - pdf_analyzer - INFO - Using PyPDF2 for PDF extraction
+2025-03-24 16:53:41,984 - tools_registry - INFO - Инструмент зарегистрирован: extract_text_from_pdf
+2025-03-24 16:53:41,984 - tools_registry - INFO - Инструмент зарегистрирован: find_financial_tables
+2025-03-24 16:53:41,985 - tools_registry - INFO - Инструмент зарегистрирован: extract_key_metrics
+2025-03-24 16:53:41,985 - tools_registry - INFO - Инструмент зарегистрирован: analyze_financial_report
+2025-03-24 16:53:41,985 - tools_registry - INFO - Инструмент зарегистрирован: extract_specific_section
+2025-03-24 16:53:41,986 - tools_registry - INFO - Инструмент зарегистрирован: extract_related_keywords
+2025-03-24 16:53:41,986 - tools_registry - INFO - Инструмент зарегистрирован: summarize_report
+2025-03-24 16:53:41,987 - tools_registry - INFO - Инструмент зарегистрирован: get_and_analyze_latest_report
+2025-03-24 16:53:41,987 - run_agent - INFO - Импортирован модуль: tools.pdf_analyzer
+2025-03-24 16:53:41,989 - trade_tracker - INFO - База данных сделок инициализирована
+2025-03-24 16:53:41,990 - tools_registry - INFO - Инструмент зарегистрирован: add_trade
+2025-03-24 16:53:41,990 - tools_registry - INFO - Инструмент зарегистрирован: close_trade
+2025-03-24 16:53:41,991 - tools_registry - INFO - Инструмент зарегистрирован: get_trade
+2025-03-24 16:53:41,992 - tools_registry - INFO - Инструмент зарегистрирован: list_trades
+2025-03-24 16:53:41,993 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_statistics
+2025-03-24 16:53:41,993 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_form_questions
+2025-03-24 16:53:41,993 - tools_registry - INFO - Инструмент зарегистрирован: get_close_trade_form_questions
+2025-03-24 16:53:41,993 - run_agent - INFO - Импортирован модуль: tools.trade_tracker
+2025-03-24 16:53:42,012 - tools_registry - INFO - Инструмент зарегистрирован: search_filings
+2025-03-24 16:53:42,013 - tools_registry - INFO - Инструмент зарегистрирован: download_filing_as_pdf
+2025-03-24 16:53:42,013 - tools_registry - INFO - Инструмент зарегистрирован: get_recent_filing
+2025-03-24 16:53:42,014 - tools_registry - INFO - Инструмент зарегистрирован: download_recent_filing_as_pdf
+2025-03-24 16:53:42,015 - tools_registry - INFO - Инструмент зарегистрирован: search_filings_by_period
+2025-03-24 16:53:42,015 - tools_registry - INFO - Инструмент зарегистрирован: format_filing_summary
+2025-03-24 16:53:42,016 - tools_registry - INFO - Инструмент зарегистрирован: get_filing_list_summary
+2025-03-24 16:53:42,016 - tools_registry - INFO - Инструмент зарегистрирован: get_company_quarterly_report
+2025-03-24 16:53:42,017 - tools_registry - INFO - Инструмент зарегистрирован: get_company_annual_report
+2025-03-24 16:53:42,017 - tools_registry - INFO - Инструмент зарегистрирован: get_company_recent_filings
+2025-03-24 16:53:42,018 - tools_registry - INFO - Инструмент зарегистрирован: download_specific_filing
+2025-03-24 16:53:42,018 - run_agent - INFO - Импортирован модуль: tools.sec_downloader
+2025-03-24 16:53:42,018 - run_agent - INFO - Импортировано модулей с инструментами: 4
+2025-03-24 16:53:42,019 - run_agent - INFO - Инициализация инвестиционного агента
+2025-03-24 16:53:42,019 - investment_agent - INFO - Initializing agent with 26 tools
+2025-03-24 16:53:42,019 - investment_agent - INFO - Investment Agent initialized successfully with 26 tools
+2025-03-24 16:53:42,019 - run_agent - INFO - Обработка запроса инвестиционным агентом
+2025-03-24 16:53:45,776 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-24 16:53:45,923 - run_agent - INFO - Получен ответ от агента (первые 200 символов): Какой тип отчетности вас интересует для Tesla (TSLA)? Вы можете выбрать из следующих вариантов:
+
+1. **Годовой отчет (10-K)** - предоставляет полную информацию о финансовом состоянии компании за год.
+2
+2025-03-24 16:53:45,923 - run_agent - INFO - Запрос успешно обработан
+2025-03-24 16:53:57,186 - run_agent - INFO - Получен запрос: Отчетность Tesla (TSLA) 10-Q
+2025-03-24 16:53:57,186 - run_agent - INFO - Сканирование директории с инструментами: /Users/zilber/Desktop/repo/ai_agent_finance/tools
+2025-03-24 16:53:57,447 - run_agent - INFO - Импортирован модуль: tools.registry
+2025-03-24 16:53:57,457 - pdf_analyzer - INFO - Using PyPDF2 for PDF extraction
+2025-03-24 16:53:57,459 - tools_registry - INFO - Инструмент зарегистрирован: extract_text_from_pdf
+2025-03-24 16:53:57,459 - tools_registry - INFO - Инструмент зарегистрирован: find_financial_tables
+2025-03-24 16:53:57,459 - tools_registry - INFO - Инструмент зарегистрирован: extract_key_metrics
+2025-03-24 16:53:57,460 - tools_registry - INFO - Инструмент зарегистрирован: analyze_financial_report
+2025-03-24 16:53:57,460 - tools_registry - INFO - Инструмент зарегистрирован: extract_specific_section
+2025-03-24 16:53:57,460 - tools_registry - INFO - Инструмент зарегистрирован: extract_related_keywords
+2025-03-24 16:53:57,461 - tools_registry - INFO - Инструмент зарегистрирован: summarize_report
+2025-03-24 16:53:57,461 - tools_registry - INFO - Инструмент зарегистрирован: get_and_analyze_latest_report
+2025-03-24 16:53:57,461 - run_agent - INFO - Импортирован модуль: tools.pdf_analyzer
+2025-03-24 16:53:57,463 - trade_tracker - INFO - База данных сделок инициализирована
+2025-03-24 16:53:57,464 - tools_registry - INFO - Инструмент зарегистрирован: add_trade
+2025-03-24 16:53:57,465 - tools_registry - INFO - Инструмент зарегистрирован: close_trade
+2025-03-24 16:53:57,465 - tools_registry - INFO - Инструмент зарегистрирован: get_trade
+2025-03-24 16:53:57,467 - tools_registry - INFO - Инструмент зарегистрирован: list_trades
+2025-03-24 16:53:57,467 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_statistics
+2025-03-24 16:53:57,468 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_form_questions
+2025-03-24 16:53:57,468 - tools_registry - INFO - Инструмент зарегистрирован: get_close_trade_form_questions
+2025-03-24 16:53:57,468 - run_agent - INFO - Импортирован модуль: tools.trade_tracker
+2025-03-24 16:53:57,486 - tools_registry - INFO - Инструмент зарегистрирован: search_filings
+2025-03-24 16:53:57,487 - tools_registry - INFO - Инструмент зарегистрирован: download_filing_as_pdf
+2025-03-24 16:53:57,487 - tools_registry - INFO - Инструмент зарегистрирован: get_recent_filing
+2025-03-24 16:53:57,488 - tools_registry - INFO - Инструмент зарегистрирован: download_recent_filing_as_pdf
+2025-03-24 16:53:57,489 - tools_registry - INFO - Инструмент зарегистрирован: search_filings_by_period
+2025-03-24 16:53:57,489 - tools_registry - INFO - Инструмент зарегистрирован: format_filing_summary
+2025-03-24 16:53:57,490 - tools_registry - INFO - Инструмент зарегистрирован: get_filing_list_summary
+2025-03-24 16:53:57,490 - tools_registry - INFO - Инструмент зарегистрирован: get_company_quarterly_report
+2025-03-24 16:53:57,491 - tools_registry - INFO - Инструмент зарегистрирован: get_company_annual_report
+2025-03-24 16:53:57,491 - tools_registry - INFO - Инструмент зарегистрирован: get_company_recent_filings
+2025-03-24 16:53:57,492 - tools_registry - INFO - Инструмент зарегистрирован: download_specific_filing
+2025-03-24 16:53:57,492 - run_agent - INFO - Импортирован модуль: tools.sec_downloader
+2025-03-24 16:53:57,492 - run_agent - INFO - Импортировано модулей с инструментами: 4
+2025-03-24 16:53:57,492 - run_agent - INFO - Инициализация инвестиционного агента
+2025-03-24 16:53:57,492 - investment_agent - INFO - Initializing agent with 26 tools
+2025-03-24 16:53:57,492 - investment_agent - INFO - Investment Agent initialized successfully with 26 tools
+2025-03-24 16:53:57,492 - run_agent - INFO - Обработка запроса инвестиционным агентом
+2025-03-24 16:54:00,485 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-24 16:54:00,546 - sec_downloader - INFO - Поиск отчетов для TSLA
+2025-03-24 16:54:02,020 - sec_downloader - INFO - Найдено 1 отчетов для TSLA
+2025-03-24 16:54:02,021 - sec_downloader - INFO - Скачивание документа в PDF: TSLA_10-Q_2024-10-23.pdf
+2025-03-24 16:54:03,302 - sec_downloader - INFO - Документ успешно скачан: downloaded_filings/TSLA_10-Q_2024-10-23.pdf
+2025-03-24 16:54:03,303 - pdf_analyzer - INFO - Начинаем извлечение текста из downloaded_filings/TSLA_10-Q_2024-10-23.pdf
+2025-03-24 16:54:09,905 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-24 16:54:10,090 - run_agent - INFO - Получен ответ от агента (первые 200 символов): Я проанализировал последний квартальный отчет (10-Q) компании Tesla (TSLA) за период, закончившийся 30 сентября 2024 года. Вот основные моменты:
+
+### Тип отчета
+- **Отчет:** 10-Q
+
+### Ключевые метрики
+2025-03-24 16:54:10,090 - run_agent - INFO - Запрос успешно обработан
+2025-03-24 19:59:21,668 - run_agent - INFO - Получен запрос: Какие позиции сейчас открыты?
+2025-03-24 19:59:21,668 - run_agent - INFO - Сканирование директории с инструментами: /Users/zilber/Desktop/repo/ai_agent_finance/tools
+2025-03-24 19:59:22,006 - run_agent - INFO - Импортирован модуль: tools.registry
+2025-03-24 19:59:22,024 - pdf_analyzer - INFO - Using PyPDF2 for PDF extraction
+2025-03-24 19:59:22,025 - tools_registry - INFO - Инструмент зарегистрирован: extract_text_from_pdf
+2025-03-24 19:59:22,025 - tools_registry - INFO - Инструмент зарегистрирован: find_financial_tables
+2025-03-24 19:59:22,026 - tools_registry - INFO - Инструмент зарегистрирован: extract_key_metrics
+2025-03-24 19:59:22,026 - tools_registry - INFO - Инструмент зарегистрирован: analyze_financial_report
+2025-03-24 19:59:22,027 - tools_registry - INFO - Инструмент зарегистрирован: extract_specific_section
+2025-03-24 19:59:22,027 - tools_registry - INFO - Инструмент зарегистрирован: extract_related_keywords
+2025-03-24 19:59:22,027 - tools_registry - INFO - Инструмент зарегистрирован: summarize_report
+2025-03-24 19:59:22,028 - tools_registry - INFO - Инструмент зарегистрирован: get_and_analyze_latest_report
+2025-03-24 19:59:22,028 - run_agent - INFO - Импортирован модуль: tools.pdf_analyzer
+2025-03-24 19:59:22,031 - trade_tracker - INFO - База данных сделок инициализирована
+2025-03-24 19:59:22,032 - tools_registry - INFO - Инструмент зарегистрирован: add_trade
+2025-03-24 19:59:22,033 - tools_registry - INFO - Инструмент зарегистрирован: close_trade
+2025-03-24 19:59:22,033 - tools_registry - INFO - Инструмент зарегистрирован: get_trade
+2025-03-24 19:59:22,035 - tools_registry - INFO - Инструмент зарегистрирован: list_trades
+2025-03-24 19:59:22,035 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_statistics
+2025-03-24 19:59:22,036 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_form_questions
+2025-03-24 19:59:22,036 - tools_registry - INFO - Инструмент зарегистрирован: get_close_trade_form_questions
+2025-03-24 19:59:22,036 - run_agent - INFO - Импортирован модуль: tools.trade_tracker
+2025-03-24 19:59:22,063 - tools_registry - INFO - Инструмент зарегистрирован: search_filings
+2025-03-24 19:59:22,063 - tools_registry - INFO - Инструмент зарегистрирован: download_filing_as_pdf
+2025-03-24 19:59:22,064 - tools_registry - INFO - Инструмент зарегистрирован: get_recent_filing
+2025-03-24 19:59:22,064 - tools_registry - INFO - Инструмент зарегистрирован: download_recent_filing_as_pdf
+2025-03-24 19:59:22,065 - tools_registry - INFO - Инструмент зарегистрирован: search_filings_by_period
+2025-03-24 19:59:22,065 - tools_registry - INFO - Инструмент зарегистрирован: format_filing_summary
+2025-03-24 19:59:22,066 - tools_registry - INFO - Инструмент зарегистрирован: get_filing_list_summary
+2025-03-24 19:59:22,066 - tools_registry - INFO - Инструмент зарегистрирован: get_company_quarterly_report
+2025-03-24 19:59:22,067 - tools_registry - INFO - Инструмент зарегистрирован: get_company_annual_report
+2025-03-24 19:59:22,068 - tools_registry - INFO - Инструмент зарегистрирован: get_company_recent_filings
+2025-03-24 19:59:22,068 - tools_registry - INFO - Инструмент зарегистрирован: download_specific_filing
+2025-03-24 19:59:22,068 - run_agent - INFO - Импортирован модуль: tools.sec_downloader
+2025-03-24 19:59:22,068 - run_agent - INFO - Импортировано модулей с инструментами: 4
+2025-03-24 19:59:22,069 - run_agent - INFO - Инициализация инвестиционного агента
+2025-03-24 19:59:22,069 - investment_agent - INFO - Initializing agent with 26 tools
+2025-03-24 19:59:22,069 - investment_agent - INFO - Investment Agent initialized successfully with 26 tools
+2025-03-24 19:59:22,069 - run_agent - INFO - Обработка запроса инвестиционным агентом
+2025-03-24 19:59:28,676 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-24 19:59:31,518 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-24 19:59:31,619 - run_agent - INFO - Получен ответ от агента (первые 200 символов): В настоящее время открыта следующая позиция:
+
+- **Стратегия:** Leveraged ETF
+- **Тип сделки:** ETFs
+- **Инструмент:** TQQQ
+- **Тип позиции:** Long
+- **Количество:** 7240
+- **Дата открытия:** 3 октября
+2025-03-24 19:59:31,619 - run_agent - INFO - Запрос успешно обработан
+2025-03-24 20:00:02,805 - run_agent - INFO - Получен запрос: получить отчет NVDA
+2025-03-24 20:00:02,805 - run_agent - INFO - Сканирование директории с инструментами: /Users/zilber/Desktop/repo/ai_agent_finance/tools
+2025-03-24 20:00:03,177 - run_agent - INFO - Импортирован модуль: tools.registry
+2025-03-24 20:00:03,194 - pdf_analyzer - INFO - Using PyPDF2 for PDF extraction
+2025-03-24 20:00:03,195 - tools_registry - INFO - Инструмент зарегистрирован: extract_text_from_pdf
+2025-03-24 20:00:03,195 - tools_registry - INFO - Инструмент зарегистрирован: find_financial_tables
+2025-03-24 20:00:03,196 - tools_registry - INFO - Инструмент зарегистрирован: extract_key_metrics
+2025-03-24 20:00:03,196 - tools_registry - INFO - Инструмент зарегистрирован: analyze_financial_report
+2025-03-24 20:00:03,196 - tools_registry - INFO - Инструмент зарегистрирован: extract_specific_section
+2025-03-24 20:00:03,197 - tools_registry - INFO - Инструмент зарегистрирован: extract_related_keywords
+2025-03-24 20:00:03,197 - tools_registry - INFO - Инструмент зарегистрирован: summarize_report
+2025-03-24 20:00:03,197 - tools_registry - INFO - Инструмент зарегистрирован: get_and_analyze_latest_report
+2025-03-24 20:00:03,197 - run_agent - INFO - Импортирован модуль: tools.pdf_analyzer
+2025-03-24 20:00:03,199 - trade_tracker - INFO - База данных сделок инициализирована
+2025-03-24 20:00:03,201 - tools_registry - INFO - Инструмент зарегистрирован: add_trade
+2025-03-24 20:00:03,201 - tools_registry - INFO - Инструмент зарегистрирован: close_trade
+2025-03-24 20:00:03,202 - tools_registry - INFO - Инструмент зарегистрирован: get_trade
+2025-03-24 20:00:03,203 - tools_registry - INFO - Инструмент зарегистрирован: list_trades
+2025-03-24 20:00:03,204 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_statistics
+2025-03-24 20:00:03,204 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_form_questions
+2025-03-24 20:00:03,204 - tools_registry - INFO - Инструмент зарегистрирован: get_close_trade_form_questions
+2025-03-24 20:00:03,204 - run_agent - INFO - Импортирован модуль: tools.trade_tracker
+2025-03-24 20:00:03,233 - tools_registry - INFO - Инструмент зарегистрирован: search_filings
+2025-03-24 20:00:03,233 - tools_registry - INFO - Инструмент зарегистрирован: download_filing_as_pdf
+2025-03-24 20:00:03,234 - tools_registry - INFO - Инструмент зарегистрирован: get_recent_filing
+2025-03-24 20:00:03,234 - tools_registry - INFO - Инструмент зарегистрирован: download_recent_filing_as_pdf
+2025-03-24 20:00:03,235 - tools_registry - INFO - Инструмент зарегистрирован: search_filings_by_period
+2025-03-24 20:00:03,236 - tools_registry - INFO - Инструмент зарегистрирован: format_filing_summary
+2025-03-24 20:00:03,236 - tools_registry - INFO - Инструмент зарегистрирован: get_filing_list_summary
+2025-03-24 20:00:03,237 - tools_registry - INFO - Инструмент зарегистрирован: get_company_quarterly_report
+2025-03-24 20:00:03,237 - tools_registry - INFO - Инструмент зарегистрирован: get_company_annual_report
+2025-03-24 20:00:03,238 - tools_registry - INFO - Инструмент зарегистрирован: get_company_recent_filings
+2025-03-24 20:00:03,238 - tools_registry - INFO - Инструмент зарегистрирован: download_specific_filing
+2025-03-24 20:00:03,238 - run_agent - INFO - Импортирован модуль: tools.sec_downloader
+2025-03-24 20:00:03,238 - run_agent - INFO - Импортировано модулей с инструментами: 4
+2025-03-24 20:00:03,239 - run_agent - INFO - Инициализация инвестиционного агента
+2025-03-24 20:00:03,239 - investment_agent - INFO - Initializing agent with 26 tools
+2025-03-24 20:00:03,239 - investment_agent - INFO - Investment Agent initialized successfully with 26 tools
+2025-03-24 20:00:03,239 - run_agent - INFO - Обработка запроса инвестиционным агентом
+2025-03-24 20:00:05,895 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-24 20:00:06,049 - run_agent - INFO - Получен ответ от агента (первые 200 символов): Какой тип отчета вас интересует для компании NVIDIA (тикер: NVDA)? Вы можете выбрать из следующих вариантов:
+
+1. Годовой отчет (10-K)
+2. Квартальный отчет (10-Q)
+
+Пожалуйста, уточните, какой отчет вам
+2025-03-24 20:00:06,049 - run_agent - INFO - Запрос успешно обработан
+2025-03-24 20:00:23,228 - run_agent - INFO - Получен запрос: Получить последний годовой отчет (10-K) для компании NVIDIA (тикер: NVDA)
+2025-03-24 20:00:23,228 - run_agent - INFO - Сканирование директории с инструментами: /Users/zilber/Desktop/repo/ai_agent_finance/tools
+2025-03-24 20:00:23,485 - run_agent - INFO - Импортирован модуль: tools.registry
+2025-03-24 20:00:23,495 - pdf_analyzer - INFO - Using PyPDF2 for PDF extraction
+2025-03-24 20:00:23,496 - tools_registry - INFO - Инструмент зарегистрирован: extract_text_from_pdf
+2025-03-24 20:00:23,497 - tools_registry - INFO - Инструмент зарегистрирован: find_financial_tables
+2025-03-24 20:00:23,497 - tools_registry - INFO - Инструмент зарегистрирован: extract_key_metrics
+2025-03-24 20:00:23,497 - tools_registry - INFO - Инструмент зарегистрирован: analyze_financial_report
+2025-03-24 20:00:23,498 - tools_registry - INFO - Инструмент зарегистрирован: extract_specific_section
+2025-03-24 20:00:23,498 - tools_registry - INFO - Инструмент зарегистрирован: extract_related_keywords
+2025-03-24 20:00:23,498 - tools_registry - INFO - Инструмент зарегистрирован: summarize_report
+2025-03-24 20:00:23,499 - tools_registry - INFO - Инструмент зарегистрирован: get_and_analyze_latest_report
+2025-03-24 20:00:23,499 - run_agent - INFO - Импортирован модуль: tools.pdf_analyzer
+2025-03-24 20:00:23,500 - trade_tracker - INFO - База данных сделок инициализирована
+2025-03-24 20:00:23,502 - tools_registry - INFO - Инструмент зарегистрирован: add_trade
+2025-03-24 20:00:23,503 - tools_registry - INFO - Инструмент зарегистрирован: close_trade
+2025-03-24 20:00:23,503 - tools_registry - INFO - Инструмент зарегистрирован: get_trade
+2025-03-24 20:00:23,504 - tools_registry - INFO - Инструмент зарегистрирован: list_trades
+2025-03-24 20:00:23,505 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_statistics
+2025-03-24 20:00:23,505 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_form_questions
+2025-03-24 20:00:23,505 - tools_registry - INFO - Инструмент зарегистрирован: get_close_trade_form_questions
+2025-03-24 20:00:23,505 - run_agent - INFO - Импортирован модуль: tools.trade_tracker
+2025-03-24 20:00:23,524 - tools_registry - INFO - Инструмент зарегистрирован: search_filings
+2025-03-24 20:00:23,525 - tools_registry - INFO - Инструмент зарегистрирован: download_filing_as_pdf
+2025-03-24 20:00:23,525 - tools_registry - INFO - Инструмент зарегистрирован: get_recent_filing
+2025-03-24 20:00:23,526 - tools_registry - INFO - Инструмент зарегистрирован: download_recent_filing_as_pdf
+2025-03-24 20:00:23,527 - tools_registry - INFO - Инструмент зарегистрирован: search_filings_by_period
+2025-03-24 20:00:23,527 - tools_registry - INFO - Инструмент зарегистрирован: format_filing_summary
+2025-03-24 20:00:23,527 - tools_registry - INFO - Инструмент зарегистрирован: get_filing_list_summary
+2025-03-24 20:00:23,528 - tools_registry - INFO - Инструмент зарегистрирован: get_company_quarterly_report
+2025-03-24 20:00:23,528 - tools_registry - INFO - Инструмент зарегистрирован: get_company_annual_report
+2025-03-24 20:00:23,529 - tools_registry - INFO - Инструмент зарегистрирован: get_company_recent_filings
+2025-03-24 20:00:23,530 - tools_registry - INFO - Инструмент зарегистрирован: download_specific_filing
+2025-03-24 20:00:23,530 - run_agent - INFO - Импортирован модуль: tools.sec_downloader
+2025-03-24 20:00:23,530 - run_agent - INFO - Импортировано модулей с инструментами: 4
+2025-03-24 20:00:23,530 - run_agent - INFO - Инициализация инвестиционного агента
+2025-03-24 20:00:23,530 - investment_agent - INFO - Initializing agent with 26 tools
+2025-03-24 20:00:23,530 - investment_agent - INFO - Investment Agent initialized successfully with 26 tools
+2025-03-24 20:00:23,530 - run_agent - INFO - Обработка запроса инвестиционным агентом
+2025-03-24 20:00:25,802 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-24 20:00:25,931 - sec_downloader - INFO - Поиск отчетов для NVDA
+2025-03-24 20:00:26,989 - sec_downloader - INFO - Найдено 1 отчетов для NVDA
+2025-03-24 20:00:26,991 - sec_downloader - INFO - Скачивание документа в PDF: NVDA_10-K_2025-02-26.pdf
+2025-03-24 20:00:28,884 - sec_downloader - INFO - Документ успешно скачан: downloaded_filings/NVDA_10-K_2025-02-26.pdf
+2025-03-24 20:00:30,534 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-24 20:00:30,627 - pdf_analyzer - INFO - Начинаем извлечение текста из downloaded_filings/NVDA_10-K_2025-02-26.pdf
+2025-03-24 20:00:38,787 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-24 20:00:39,028 - run_agent - INFO - Получен ответ от агента (первые 200 символов): Я проанализировал последний годовой отчет (10-K) компании NVIDIA за период, закончившийся 26 января 2025 года. Вот основные моменты:
+
+### Основные финансовые показатели:
+- **Выручка:** $130,497 млн
+- 
+2025-03-24 20:00:39,028 - run_agent - INFO - Запрос успешно обработан
+2025-03-24 20:26:07,735 - run_agent - INFO - Получен запрос: текущие открытые позиции
+2025-03-24 20:26:07,736 - run_agent - INFO - Сканирование директории с инструментами: /Users/zilber/Desktop/repo/ai_agent_finance/tools
+2025-03-24 20:26:08,092 - run_agent - INFO - Импортирован модуль: tools.registry
+2025-03-24 20:26:08,108 - pdf_analyzer - INFO - Using PyPDF2 for PDF extraction
+2025-03-24 20:26:08,109 - tools_registry - INFO - Инструмент зарегистрирован: extract_text_from_pdf
+2025-03-24 20:26:08,110 - tools_registry - INFO - Инструмент зарегистрирован: find_financial_tables
+2025-03-24 20:26:08,110 - tools_registry - INFO - Инструмент зарегистрирован: extract_key_metrics
+2025-03-24 20:26:08,110 - tools_registry - INFO - Инструмент зарегистрирован: analyze_financial_report
+2025-03-24 20:26:08,111 - tools_registry - INFO - Инструмент зарегистрирован: extract_specific_section
+2025-03-24 20:26:08,111 - tools_registry - INFO - Инструмент зарегистрирован: extract_related_keywords
+2025-03-24 20:26:08,111 - tools_registry - INFO - Инструмент зарегистрирован: summarize_report
+2025-03-24 20:26:08,112 - tools_registry - INFO - Инструмент зарегистрирован: get_and_analyze_latest_report
+2025-03-24 20:26:08,112 - run_agent - INFO - Импортирован модуль: tools.pdf_analyzer
+2025-03-24 20:26:08,114 - trade_tracker - INFO - База данных сделок инициализирована
+2025-03-24 20:26:08,116 - tools_registry - INFO - Инструмент зарегистрирован: add_trade
+2025-03-24 20:26:08,116 - tools_registry - INFO - Инструмент зарегистрирован: close_trade
+2025-03-24 20:26:08,117 - tools_registry - INFO - Инструмент зарегистрирован: get_trade
+2025-03-24 20:26:08,118 - tools_registry - INFO - Инструмент зарегистрирован: list_trades
+2025-03-24 20:26:08,119 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_statistics
+2025-03-24 20:26:08,119 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_form_questions
+2025-03-24 20:26:08,119 - tools_registry - INFO - Инструмент зарегистрирован: get_close_trade_form_questions
+2025-03-24 20:26:08,119 - run_agent - INFO - Импортирован модуль: tools.trade_tracker
+2025-03-24 20:26:08,147 - tools_registry - INFO - Инструмент зарегистрирован: search_filings
+2025-03-24 20:26:08,147 - tools_registry - INFO - Инструмент зарегистрирован: download_filing_as_pdf
+2025-03-24 20:26:08,148 - tools_registry - INFO - Инструмент зарегистрирован: get_recent_filing
+2025-03-24 20:26:08,148 - tools_registry - INFO - Инструмент зарегистрирован: download_recent_filing_as_pdf
+2025-03-24 20:26:08,149 - tools_registry - INFO - Инструмент зарегистрирован: search_filings_by_period
+2025-03-24 20:26:08,150 - tools_registry - INFO - Инструмент зарегистрирован: format_filing_summary
+2025-03-24 20:26:08,150 - tools_registry - INFO - Инструмент зарегистрирован: get_filing_list_summary
+2025-03-24 20:26:08,151 - tools_registry - INFO - Инструмент зарегистрирован: get_company_quarterly_report
+2025-03-24 20:26:08,151 - tools_registry - INFO - Инструмент зарегистрирован: get_company_annual_report
+2025-03-24 20:26:08,152 - tools_registry - INFO - Инструмент зарегистрирован: get_company_recent_filings
+2025-03-24 20:26:08,152 - tools_registry - INFO - Инструмент зарегистрирован: download_specific_filing
+2025-03-24 20:26:08,152 - run_agent - INFO - Импортирован модуль: tools.sec_downloader
+2025-03-24 20:26:08,152 - run_agent - INFO - Импортировано модулей с инструментами: 4
+2025-03-24 20:26:08,153 - run_agent - INFO - Инициализация инвестиционного агента
+2025-03-24 20:26:08,153 - investment_agent - INFO - Initializing agent with 26 tools
+2025-03-24 20:26:08,153 - investment_agent - INFO - Investment Agent initialized successfully with 26 tools
+2025-03-24 20:26:08,153 - run_agent - INFO - Обработка запроса инвестиционным агентом
+2025-03-24 20:26:10,547 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-24 20:26:13,706 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-24 20:26:13,857 - run_agent - INFO - Получен ответ от агента (первые 200 символов): В настоящее время у вас открыта одна позиция:
+
+- **Инструмент**: TQQQ (Leveraged ETF)
+- **Тип сделки**: ETFs
+- **Стратегия**: Leveraged ETF
+- **Тип позиции**: Длинная (long)
+- **Количество**: 7240
+- *
+2025-03-24 20:26:13,858 - run_agent - INFO - Запрос успешно обработан
+2025-03-25 08:59:47,553 - run_agent - INFO - Получен запрос: сведения об отчете MSFT
+2025-03-25 08:59:47,554 - run_agent - INFO - Сканирование директории с инструментами: /Users/zilber/Desktop/repo/ai_agent_finance/tools
+2025-03-25 08:59:47,812 - run_agent - INFO - Импортирован модуль: tools.registry
+2025-03-25 08:59:47,830 - pdf_analyzer - INFO - Using PyPDF2 for PDF extraction
+2025-03-25 08:59:47,831 - tools_registry - INFO - Инструмент зарегистрирован: extract_text_from_pdf
+2025-03-25 08:59:47,831 - tools_registry - INFO - Инструмент зарегистрирован: find_financial_tables
+2025-03-25 08:59:47,832 - tools_registry - INFO - Инструмент зарегистрирован: extract_key_metrics
+2025-03-25 08:59:47,832 - tools_registry - INFO - Инструмент зарегистрирован: analyze_financial_report
+2025-03-25 08:59:47,833 - tools_registry - INFO - Инструмент зарегистрирован: extract_specific_section
+2025-03-25 08:59:47,833 - tools_registry - INFO - Инструмент зарегистрирован: extract_related_keywords
+2025-03-25 08:59:47,833 - tools_registry - INFO - Инструмент зарегистрирован: summarize_report
+2025-03-25 08:59:47,834 - tools_registry - INFO - Инструмент зарегистрирован: get_and_analyze_latest_report
+2025-03-25 08:59:47,834 - run_agent - INFO - Импортирован модуль: tools.pdf_analyzer
+2025-03-25 08:59:47,837 - trade_tracker - INFO - База данных сделок инициализирована
+2025-03-25 08:59:47,838 - tools_registry - INFO - Инструмент зарегистрирован: add_trade
+2025-03-25 08:59:47,839 - tools_registry - INFO - Инструмент зарегистрирован: close_trade
+2025-03-25 08:59:47,839 - tools_registry - INFO - Инструмент зарегистрирован: get_trade
+2025-03-25 08:59:47,841 - tools_registry - INFO - Инструмент зарегистрирован: list_trades
+2025-03-25 08:59:47,842 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_statistics
+2025-03-25 08:59:47,842 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_form_questions
+2025-03-25 08:59:47,842 - tools_registry - INFO - Инструмент зарегистрирован: get_close_trade_form_questions
+2025-03-25 08:59:47,842 - run_agent - INFO - Импортирован модуль: tools.trade_tracker
+2025-03-25 08:59:47,861 - tools_registry - INFO - Инструмент зарегистрирован: search_filings
+2025-03-25 08:59:47,861 - tools_registry - INFO - Инструмент зарегистрирован: download_filing_as_pdf
+2025-03-25 08:59:47,862 - tools_registry - INFO - Инструмент зарегистрирован: get_recent_filing
+2025-03-25 08:59:47,862 - tools_registry - INFO - Инструмент зарегистрирован: download_recent_filing_as_pdf
+2025-03-25 08:59:47,863 - tools_registry - INFO - Инструмент зарегистрирован: search_filings_by_period
+2025-03-25 08:59:47,864 - tools_registry - INFO - Инструмент зарегистрирован: format_filing_summary
+2025-03-25 08:59:47,864 - tools_registry - INFO - Инструмент зарегистрирован: get_filing_list_summary
+2025-03-25 08:59:47,865 - tools_registry - INFO - Инструмент зарегистрирован: get_company_quarterly_report
+2025-03-25 08:59:47,865 - tools_registry - INFO - Инструмент зарегистрирован: get_company_annual_report
+2025-03-25 08:59:47,866 - tools_registry - INFO - Инструмент зарегистрирован: get_company_recent_filings
+2025-03-25 08:59:47,866 - tools_registry - INFO - Инструмент зарегистрирован: download_specific_filing
+2025-03-25 08:59:47,866 - run_agent - INFO - Импортирован модуль: tools.sec_downloader
+2025-03-25 08:59:47,866 - run_agent - INFO - Импортировано модулей с инструментами: 4
+2025-03-25 08:59:47,867 - run_agent - INFO - Инициализация инвестиционного агента
+2025-03-25 08:59:47,867 - investment_agent - INFO - Initializing agent with 26 tools
+2025-03-25 08:59:47,867 - investment_agent - INFO - Investment Agent initialized successfully with 26 tools
+2025-03-25 08:59:47,867 - run_agent - INFO - Обработка запроса инвестиционным агентом
+2025-03-25 08:59:49,921 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-25 08:59:50,048 - run_agent - INFO - Получен ответ от агента (первые 200 символов): Какой тип отчета вас интересует для Microsoft (MSFT)? Вы можете выбрать из годового отчета (10-K) или квартального отчета (10-Q).
+2025-03-25 08:59:50,048 - run_agent - INFO - Запрос успешно обработан
+2025-03-25 09:00:06,439 - run_agent - INFO - Получен запрос: Получить последний квартальный отчет (10-Q) для Microsoft (MSFT)
+2025-03-25 09:00:06,439 - run_agent - INFO - Сканирование директории с инструментами: /Users/zilber/Desktop/repo/ai_agent_finance/tools
+2025-03-25 09:00:06,697 - run_agent - INFO - Импортирован модуль: tools.registry
+2025-03-25 09:00:06,707 - pdf_analyzer - INFO - Using PyPDF2 for PDF extraction
+2025-03-25 09:00:06,709 - tools_registry - INFO - Инструмент зарегистрирован: extract_text_from_pdf
+2025-03-25 09:00:06,709 - tools_registry - INFO - Инструмент зарегистрирован: find_financial_tables
+2025-03-25 09:00:06,709 - tools_registry - INFO - Инструмент зарегистрирован: extract_key_metrics
+2025-03-25 09:00:06,710 - tools_registry - INFO - Инструмент зарегистрирован: analyze_financial_report
+2025-03-25 09:00:06,710 - tools_registry - INFO - Инструмент зарегистрирован: extract_specific_section
+2025-03-25 09:00:06,710 - tools_registry - INFO - Инструмент зарегистрирован: extract_related_keywords
+2025-03-25 09:00:06,711 - tools_registry - INFO - Инструмент зарегистрирован: summarize_report
+2025-03-25 09:00:06,711 - tools_registry - INFO - Инструмент зарегистрирован: get_and_analyze_latest_report
+2025-03-25 09:00:06,711 - run_agent - INFO - Импортирован модуль: tools.pdf_analyzer
+2025-03-25 09:00:06,713 - trade_tracker - INFO - База данных сделок инициализирована
+2025-03-25 09:00:06,714 - tools_registry - INFO - Инструмент зарегистрирован: add_trade
+2025-03-25 09:00:06,715 - tools_registry - INFO - Инструмент зарегистрирован: close_trade
+2025-03-25 09:00:06,715 - tools_registry - INFO - Инструмент зарегистрирован: get_trade
+2025-03-25 09:00:06,717 - tools_registry - INFO - Инструмент зарегистрирован: list_trades
+2025-03-25 09:00:06,717 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_statistics
+2025-03-25 09:00:06,717 - tools_registry - INFO - Инструмент зарегистрирован: get_trade_form_questions
+2025-03-25 09:00:06,718 - tools_registry - INFO - Инструмент зарегистрирован: get_close_trade_form_questions
+2025-03-25 09:00:06,718 - run_agent - INFO - Импортирован модуль: tools.trade_tracker
+2025-03-25 09:00:06,736 - tools_registry - INFO - Инструмент зарегистрирован: search_filings
+2025-03-25 09:00:06,737 - tools_registry - INFO - Инструмент зарегистрирован: download_filing_as_pdf
+2025-03-25 09:00:06,737 - tools_registry - INFO - Инструмент зарегистрирован: get_recent_filing
+2025-03-25 09:00:06,738 - tools_registry - INFO - Инструмент зарегистрирован: download_recent_filing_as_pdf
+2025-03-25 09:00:06,739 - tools_registry - INFO - Инструмент зарегистрирован: search_filings_by_period
+2025-03-25 09:00:06,739 - tools_registry - INFO - Инструмент зарегистрирован: format_filing_summary
+2025-03-25 09:00:06,739 - tools_registry - INFO - Инструмент зарегистрирован: get_filing_list_summary
+2025-03-25 09:00:06,740 - tools_registry - INFO - Инструмент зарегистрирован: get_company_quarterly_report
+2025-03-25 09:00:06,740 - tools_registry - INFO - Инструмент зарегистрирован: get_company_annual_report
+2025-03-25 09:00:06,741 - tools_registry - INFO - Инструмент зарегистрирован: get_company_recent_filings
+2025-03-25 09:00:06,742 - tools_registry - INFO - Инструмент зарегистрирован: download_specific_filing
+2025-03-25 09:00:06,742 - run_agent - INFO - Импортирован модуль: tools.sec_downloader
+2025-03-25 09:00:06,742 - run_agent - INFO - Импортировано модулей с инструментами: 4
+2025-03-25 09:00:06,742 - run_agent - INFO - Инициализация инвестиционного агента
+2025-03-25 09:00:06,742 - investment_agent - INFO - Initializing agent with 26 tools
+2025-03-25 09:00:06,742 - investment_agent - INFO - Investment Agent initialized successfully with 26 tools
+2025-03-25 09:00:06,742 - run_agent - INFO - Обработка запроса инвестиционным агентом
+2025-03-25 09:00:08,559 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-25 09:00:08,614 - sec_downloader - INFO - Поиск отчетов для MSFT
+2025-03-25 09:00:10,502 - sec_downloader - INFO - Найдено 1 отчетов для MSFT
+2025-03-25 09:00:10,503 - sec_downloader - INFO - Скачивание документа в PDF: MSFT_10-Q_2025-01-29.pdf
+2025-03-25 09:00:12,232 - sec_downloader - INFO - Документ успешно скачан: downloaded_filings/MSFT_10-Q_2025-01-29.pdf
+2025-03-25 09:00:13,984 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-25 09:00:14,003 - pdf_analyzer - INFO - Начинаем извлечение текста из downloaded_filings/MSFT_10-Q_2025-01-29.pdf
+2025-03-25 09:00:22,790 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-25 09:00:22,932 - run_agent - INFO - Получен ответ от агента (первые 200 символов): Я проанализировал последний квартальный отчет (10-Q) для Microsoft (MSFT) за период, закончившийся 31 декабря 2024 года. Вот основные моменты:
+
+### Основные финансовые метрики:
+- **Выручка**: $69,632 
+2025-03-25 09:00:22,932 - run_agent - INFO - Запрос успешно обработан

@@ -22,6 +22,7 @@ from tools.registry import get_all_tools
 # ВАЖНО: Сначала импортируем модули с инструментами, чтобы они могли зарегистрироваться
 import tools.sec_downloader
 import tools.pdf_analyzer
+import tools.trade_tracker
 
 from agents import Runner, RunConfig
 # Импортируем функцию для получения агента ПОСЛЕ регистрации инструментов

@@ -1,0 +1,61 @@
+2025-03-23 15:52:43,255 - cli_agent - INFO - Processing query: Какие акции стоит купить в технологическом секторе?
+2025-03-23 15:52:43,258 - cli_agent - ERROR - Error processing query: No module named 'openai'
+2025-03-23 15:52:43,259 - cli_agent - ERROR - Traceback (most recent call last):
+  File "/Users/zilber/Desktop/repo/ai_agent_finance/cli_agent.py", line 41, in process_query
+    from agent import get_agent
+  File "/Users/zilber/Desktop/repo/ai_agent_finance/agent.py", line 14, in <module>
+    from openai import OpenAI
+ModuleNotFoundError: No module named 'openai'
+
+2025-03-23 15:56:16,501 - cli_agent - INFO - Processing query: Какие акции стоит купить в технологическом секторе?
+2025-03-23 15:56:16,883 - investment_agent - INFO - Initializing agent with 0 tools
+2025-03-23 15:56:16,883 - investment_agent - INFO - Investment Agent initialized successfully with 0 tools
+2025-03-23 15:56:21,086 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-23 15:59:56,365 - cli_agent - INFO - Processing query: Есть ли возможность скачать отчетность AAPL?
+2025-03-23 15:59:56,709 - investment_agent - INFO - Initializing agent with 0 tools
+2025-03-23 15:59:56,709 - investment_agent - INFO - Investment Agent initialized successfully with 0 tools
+2025-03-23 15:59:58,047 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-23 16:00:19,858 - cli_agent - INFO - Processing query: Какие виды отчетности доступны для компании AAPL?
+2025-03-23 16:00:20,118 - investment_agent - INFO - Initializing agent with 0 tools
+2025-03-23 16:00:20,118 - investment_agent - INFO - Investment Agent initialized successfully with 0 tools
+2025-03-23 16:00:24,913 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-23 16:04:07,757 - cli_agent - INFO - Processing query: Скачать последний квартальный отчет (10-Q) компании Apple Inc. (AAPL)
+2025-03-23 16:04:08,098 - investment_agent - INFO - Initializing agent with 0 tools
+2025-03-23 16:04:08,098 - investment_agent - INFO - Investment Agent initialized successfully with 0 tools
+2025-03-23 16:04:15,944 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-23 16:05:22,229 - cli_agent - INFO - Processing query: актуальные данные о владении акциями инсайдерами компании Apple Inc.
+2025-03-23 16:05:22,491 - investment_agent - INFO - Initializing agent with 0 tools
+2025-03-23 16:05:22,491 - investment_agent - INFO - Investment Agent initialized successfully with 0 tools
+2025-03-23 16:05:23,700 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-23 16:05:37,350 - cli_agent - INFO - Processing query: последние данные о владении акциями инсайдерами компании Apple Inc. (AAPL)
+2025-03-23 16:05:37,608 - investment_agent - INFO - Initializing agent with 0 tools
+2025-03-23 16:05:37,608 - investment_agent - INFO - Investment Agent initialized successfully with 0 tools
+2025-03-23 16:05:39,902 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-23 16:06:56,231 - cli_agent - INFO - Processing query: Есть ли доступ к Forms 3, 4, 5 компании AAPL? Какой самый свежий документ?
+2025-03-23 16:06:56,489 - investment_agent - INFO - Initializing agent with 0 tools
+2025-03-23 16:06:56,489 - investment_agent - INFO - Investment Agent initialized successfully with 0 tools
+2025-03-23 16:07:02,266 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-23 16:08:33,458 - cli_agent - INFO - Processing query: Изучи последнюю форму 4 компании Apple Inc. (AAPL) и предоставь важные данные из нее.
+2025-03-23 16:08:33,715 - investment_agent - INFO - Initializing agent with 0 tools
+2025-03-23 16:08:33,715 - investment_agent - INFO - Investment Agent initialized successfully with 0 tools
+2025-03-23 16:08:37,874 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-23 16:09:07,599 - cli_agent - INFO - Processing query: текущие открытые позиции
+2025-03-23 16:09:07,860 - investment_agent - INFO - Initializing agent with 0 tools
+2025-03-23 16:09:07,860 - investment_agent - INFO - Investment Agent initialized successfully with 0 tools
+2025-03-23 16:09:09,365 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-23 16:11:00,999 - cli_agent - INFO - Processing query: текущие позиции по инструменту ES500
+2025-03-23 16:11:01,374 - investment_agent - INFO - Initializing agent with 0 tools
+2025-03-23 16:11:01,374 - investment_agent - INFO - Investment Agent initialized successfully with 0 tools
+2025-03-23 16:11:07,759 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-23 16:11:37,402 - cli_agent - INFO - Processing query: текущие позиции по инструменту ES500
+2025-03-23 16:11:37,661 - investment_agent - INFO - Initializing agent with 0 tools
+2025-03-23 16:11:37,661 - investment_agent - INFO - Investment Agent initialized successfully with 0 tools
+2025-03-23 16:11:40,214 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-23 16:14:49,546 - cli_agent - INFO - Processing query: текущие позиции по инструменту ES500
+2025-03-23 16:14:49,916 - investment_agent - INFO - Initializing agent with 0 tools
+2025-03-23 16:14:49,916 - investment_agent - INFO - Investment Agent initialized successfully with 0 tools
+2025-03-23 16:14:53,048 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-03-23 16:16:35,804 - cli_agent - INFO - Processing query: мне нужна информация по всем отрктым на данный момент позициям в стратегии ES Futures
+2025-03-23 16:16:36,045 - investment_agent - INFO - Initializing agent with 0 tools
+2025-03-23 16:16:36,045 - investment_agent - INFO - Investment Agent initialized successfully with 0 tools
+2025-03-23 16:16:40,838 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
