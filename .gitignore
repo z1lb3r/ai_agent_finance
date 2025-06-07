@@ -1,5 +1,6 @@
 /venv
-/investment_agent
+
 /env
 .env/
 
+investment_agent/.env

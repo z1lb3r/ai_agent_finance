@@ -1,0 +1,8 @@
+openai>=1.0.0
+agents>=0.1.0
+requests>=2.25.0
+pandas>=1.2.0
+pymupdf>=1.18.0
+
+[dev]
+pytest>=7.0.0
