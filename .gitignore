@@ -1,1 +1,3 @@
 venv/bin/mcp
+/venv
+/investment_agent
