@@ -49,4 +49,3 @@ def validate_config():
 # Выполняем проверку при импорте модуля
 if __name__ != "__main__":
     validate_config()
-
