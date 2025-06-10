@@ -16,6 +16,11 @@ if not SEC_API_KEY:
 
 SEC_EDGAR_USER_AGENT = os.getenv("SEC_EDGAR_USER_AGENT", "InvestmentAIAgent default@example.com")
 
+# Bybit API settings
+BYBIT_API_KEY = os.getenv("BYBIT_API_KEY")  # Опционально, для приватных методов в будущем
+BYBIT_SECRET_KEY = os.getenv("BYBIT_SECRET_KEY")  # Опционально, для приватных методов в будущем
+BYBIT_TESTNET = os.getenv("BYBIT_TESTNET", "false").lower() == "true"
+
 # Model settings
 DEFAULT_MODEL = os.getenv("DEFAULT_MODEL", "gpt-4o-mini")
 DEFAULT_TEMPERATURE = float(os.getenv("DEFAULT_TEMPERATURE", "0.2"))
@@ -45,26 +50,3 @@ def validate_config():
 if __name__ != "__main__":
     validate_config()
 
-
-
-# # OpenAI API credentials
-# OPENAI_API_KEY = "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"
-
-# # Настройки модели
-# # SEC API settings
-# SEC_API_KEY = "b22a206dbdb6513673870ab11b66de47db4e9d96da7c66e37016b59dc93441fe"  # Замените на ваш ключ API от sec-api.io
-# SEC_EDGAR_USER_AGENT = "InvestmentAIAgent czilber@proton.me"
-
-# # Model settings
-# DEFAULT_MODEL = "gpt-4.1-mini" # "gpt-4o"
-# DEFAULT_TEMPERATURE = 0.2
-# MAX_TOKENS = 4000
-
-# # API request parameters
-# REQUEST_TIMEOUT = 30  # Timeout for API requests in seconds
-# MAX_RETRIES = 3  # Maximum number of retries for API requests
-# RETRY_DELAY = 1  # Initial delay between retries in seconds
-# RATE_LIMIT_DELAY = 5  # Delay when hitting rate limits in seconds
-
-# # Other configuration parameters
-# CACHE_EXPIRY = 3600   # Cache expiry time in seconds (1 hour)
